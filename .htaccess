@@ -1,12 +1,16 @@
-RewriteEngine on
-AddDefaultCharset utf8
+AddDefaultCharset UTF-8
 Options -Indexes
+RewriteEngine on
 
 # Karbantartás redirect
-#RewriteCond %{REMOTE_ADDR} !81\.183\.23\.208$
+RewriteCond %{REMOTE_ADDR} !81\.183\.23\.208$
 RewriteCond %{REQUEST_URI} !/ur/
 RewriteRule .*  /ur/ [L]
 
+# Almappa redirect
+RewriteCond %{REMOTE_ADDR} 81\.183\.23\.208$
+RewriteCond %{REQUEST_URI} !/web/
+RewriteRule .*  /web/ [L]
 
 RewriteCond %{HTTPS} off
 # First rewrite to HTTPS:
