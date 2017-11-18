@@ -1,0 +1,5 @@
+/* line 1, sass/style.scss */
+body, html {
+  height: 100%;
+  position: relative;
+}
