@@ -1,4 +1,170 @@
+@import 'settings';
+
 body, html{
   height: 100%;
   position: relative;
+}
+
+body{
+  background-color: #faf8f2;
+}
+
+.fusion-main-menu > ul > li > a{
+  text-transform: uppercase;
+}
+
+.fusion-secondary-header{
+  color: white;
+  a{
+    color: white;
+  }
+  .contacts{
+    span.email {
+      margin-right: 20px;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+.fusion-header{
+  padding: 5px 0;
+}
+.fusion-header .fusion-row{
+  padding: 0 140px;
+  background-image: url('../../images/menudesign_left.svg'), url('../../images/menudesign_right.svg');
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+}
+.fusion-main-menu>ul>li > a span{
+  padding-bottom: 4px;
+  border-bottom: 4px solid transparent;
+}
+.fusion-main-menu>ul>li.current_page_item > a span {
+  border-bottom: 4px solid $color-bordo;
+}
+
+footer.mainfooter{
+  background-image: url('../../images/footer_design.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  height: 375px;
+  color: white;
+
+  .fwrapper{
+    width: $pagewidth;
+    max-width: $pagewidth;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+
+    .footer-menu {
+      position: absolute;
+      right: 0;
+      top: 45px;
+      z-index: 10;
+
+      ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      ul {
+        li{
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          padding: 0 15px;
+
+          a{
+            text-transform: uppercase;
+            display: block;
+            padding: 5px 0px;
+            font-size: 1.1em;
+            color: white;
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-color: transparent;
+          }
+
+          &.current{
+            a {
+              border-bottom-color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-content-holder{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      height: 100%;
+      position: relative;
+      padding: 20px 0;
+
+      .fusion-social-networks .fusion-social-network-icon{
+        background: $color-arany;
+        border-radius: 15px;
+        margin: 0 12px;
+        padding: 6px;
+        width: auto;
+      }
+
+      a, a:visited{
+        color: white;
+      }
+
+      & > div.logo{
+        flex-basis: 25%;
+        padding-right: 25px;
+      }
+      & > div.contact-infos{
+        flex-basis: calc(75%/2);
+        .infos{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-end;
+          justify-content: space-between;
+          & > div {
+            line-height: 28px;
+          }
+          & > div.email{
+            flex-basis: 100%;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+          }
+        }
+      }
+      & > div.creator{
+        flex-basis: calc(75%/2);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding-bottom: 3px;
+
+        img.ref{
+          height: 28px;
+          position: relative;
+          margin-top: -11px;
+        }
+
+        & > div {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
 }

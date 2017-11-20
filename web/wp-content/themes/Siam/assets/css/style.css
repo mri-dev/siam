@@ -1,5 +1,181 @@
-/* line 1, sass/style.scss */
+/* line 3, sass/style.scss */
 body, html {
   height: 100%;
   position: relative;
+}
+
+/* line 8, sass/style.scss */
+body {
+  background-color: #faf8f2;
+}
+
+/* line 12, sass/style.scss */
+.fusion-main-menu > ul > li > a {
+  text-transform: uppercase;
+}
+
+/* line 16, sass/style.scss */
+.fusion-secondary-header {
+  color: white;
+}
+/* line 18, sass/style.scss */
+.fusion-secondary-header a {
+  color: white;
+}
+/* line 22, sass/style.scss */
+.fusion-secondary-header .contacts span.email {
+  margin-right: 20px;
+}
+/* line 26, sass/style.scss */
+.fusion-secondary-header .contacts i {
+  margin-right: 5px;
+}
+
+/* line 32, sass/style.scss */
+.fusion-header {
+  padding: 5px 0;
+}
+
+/* line 35, sass/style.scss */
+.fusion-header .fusion-row {
+  padding: 0 140px;
+  background-image: url("../../images/menudesign_left.svg"), url("../../images/menudesign_right.svg");
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+}
+
+/* line 41, sass/style.scss */
+.fusion-main-menu > ul > li > a span {
+  padding-bottom: 4px;
+  border-bottom: 4px solid transparent;
+}
+
+/* line 45, sass/style.scss */
+.fusion-main-menu > ul > li.current_page_item > a span {
+  border-bottom: 4px solid #651b1a;
+}
+
+/* line 49, sass/style.scss */
+footer.mainfooter {
+  background-image: url("../../images/footer_design.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  height: 375px;
+  color: white;
+}
+/* line 57, sass/style.scss */
+footer.mainfooter .fwrapper {
+  width: 1050px;
+  max-width: 1050px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+/* line 64, sass/style.scss */
+footer.mainfooter .fwrapper .footer-menu {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  z-index: 10;
+}
+/* line 70, sass/style.scss */
+footer.mainfooter .fwrapper .footer-menu ul, footer.mainfooter .fwrapper .footer-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 77, sass/style.scss */
+footer.mainfooter .fwrapper .footer-menu ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 0 15px;
+}
+/* line 83, sass/style.scss */
+footer.mainfooter .fwrapper .footer-menu ul li a {
+  text-transform: uppercase;
+  display: block;
+  padding: 5px 0px;
+  font-size: 1.1em;
+  color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: transparent;
+}
+/* line 95, sass/style.scss */
+footer.mainfooter .fwrapper .footer-menu ul li.current a {
+  border-bottom-color: white;
+}
+/* line 103, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+  padding: 20px 0;
+}
+/* line 113, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder .fusion-social-networks .fusion-social-network-icon {
+  background: #a67c00;
+  border-radius: 15px;
+  margin: 0 12px;
+  padding: 6px;
+  width: auto;
+}
+/* line 121, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder a, footer.mainfooter .fwrapper .footer-content-holder a:visited {
+  color: white;
+}
+/* line 125, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder > div.logo {
+  flex-basis: 25%;
+  padding-right: 25px;
+}
+/* line 129, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos {
+  flex-basis: calc(75%/2);
+}
+/* line 131, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+/* line 138, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div {
+  line-height: 28px;
+}
+/* line 141, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email {
+  flex-basis: 100%;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+/* line 148, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder > div.creator {
+  flex-basis: calc(75%/2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 3px;
+}
+/* line 158, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder > div.creator img.ref {
+  height: 28px;
+  position: relative;
+  margin-top: -11px;
+}
+/* line 164, sass/style.scss */
+footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
+  padding: 0 5px;
 }
