@@ -1,4 +1,6 @@
 @import 'settings';
+@import 'fonts';
+
 
 body, html{
   height: 100%;
@@ -12,7 +14,7 @@ body{
 .fusion-main-menu > ul > li > a{
   text-transform: uppercase;
 }
-
+1
 .fusion-secondary-header{
   color: white;
   a{
@@ -46,6 +48,48 @@ body{
   border-bottom: 4px solid $color-bordo;
 }
 
+body.home {
+  h1 {
+    font-family: 'handwrite', sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    color: #daae2d;
+  }
+  #main{
+    margin-top: -170px !important;
+  }
+}
+
+main#main {
+  margin-bottom: -50px !important;
+  position: relative;
+  overflow: hidden;
+}
+#sliders-container{
+  position: relative;
+}
+#sliders-container:after{
+  content:"";
+  position: absolute;
+  bottom: 0;
+  background-image: url('../../images/slide-bottom-overlay.svg');
+  background-position: center;
+  height: 100px;
+  width: 100%;
+  background-size: cover;
+}
+.rev_slider_wrapper .shadow-left,
+.rev_slider_wrapper .shadow-right{
+  display: none;
+}
+.avada-skin-rev{
+  border: none !important;
+}
+
+.din-text{
+  font-family: 'Din Cond', sans-serif;
+}
+
 footer.mainfooter{
   background-image: url('../../images/footer_design.svg');
   background-repeat: no-repeat;
@@ -53,6 +97,8 @@ footer.mainfooter{
   background-size: contain;
   height: 375px;
   color: white;
+  position: relative;
+  z-index: 100;
 
   .fwrapper{
     width: $pagewidth;
@@ -60,6 +106,7 @@ footer.mainfooter{
     margin: 0 auto;
     height: 100%;
     position: relative;
+    font-size: 0.84em;
 
     .footer-menu {
       position: absolute;
@@ -166,5 +213,303 @@ footer.mainfooter{
         }
       }
     }
+  }
+}
+
+.des-bg {
+  background-image: url('../../images/bgoverlay.svg');
+  background-repeat: no-repeat !important;
+  background-position: center top !important;
+  background-size: cover !important;
+
+  &.des-bg-topstart{
+    background-position: center top 110px !important;
+  }
+}
+
+.content-logo-holder{
+  background-image: url('../../images/logo-content-backdes.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  margin: 10px auto;
+  position: relative;
+
+  .airtext {
+    position: absolute;
+    font-size: 1.4em;
+    font-weight: 300;
+    top: 12%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+    height: 48%;
+  }
+}
+
+.welcome-text{
+  margin: -99px 15% 0 15% !important;
+  line-height: 1.4;
+  font-size: 1.2em;
+}
+.headdivider-holder{
+  position: relative;
+  text-align: center;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+
+  .backline{
+    flex: 1;
+    height: 1px;
+    background-color: $color-arany;
+  }
+
+  .text {
+    padding: 0 20px;
+  }
+
+
+  h2{
+    font-family: 'handwrite', sans-serif !important;
+    font-size: 2.2em !important;
+    color: $color-arany !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+  }
+}
+body.home .home-h1{
+  h1 {
+    margin: 0 !important;
+  }
+}
+.datepickerbutton-holder{
+  text-align: center;
+  position: relative;
+
+  a.datepicker-btn {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+    z-index: 10;
+  }
+}
+.datepicker-btn{
+  font-family: 'Din Comp', arial;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border: 5px solid #dcb850;
+  box-shadow: 0 7px 15px -4px #73611e;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a67c00+0,ffdc73+100 */
+  background: rgb(166,124,0); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(166,124,0,1) 0%, rgba(255,220,115,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(166,124,0,1) 0%,rgba(255,220,115,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(166,124,0,1) 0%,rgba(255,220,115,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a67c00', endColorstr='#ffdc73',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  &:hover{
+    color: white;
+  }
+}
+.news-header{
+  height: 420px;
+}
+
+.fusion-secondary-header{
+  color: white !important;
+  a{
+    color: white !important;
+  }
+}
+
+.news-holder-content{
+  font-size: 1.2em;
+  margin-top: -420px !important;
+  line-height: 1.2;
+  color: white;
+  padding-top: 150px !important;
+  font-family: 'Din Cond', arial;
+  background-image: url('../../images/logo-silue.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 28%;
+
+  p{
+    margin: 5px 0 !important;
+  }
+
+  h1{
+    margin: 0 0 15px 0 !important;
+    color: white !important;
+  }
+}
+
+.bloglist-holder{
+  background: rgba(255, 255, 255, 1);
+  margin: 50px auto;
+  padding: 20px;
+
+  .content-holder{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    color: #262626;
+    font-size: 0.84em;
+
+    & > article {
+      padding: 20px;
+      text-align: center;
+      flex-basis: calc(100% / 3);
+
+      .image{
+        position: relative;
+        overflow: hidden;
+        height: 290px;
+
+        img {
+          height: 100%;
+          width: auto;
+          max-width: initial;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+
+        &.portrait{
+          img {
+            height: auto;
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+
+      .date {
+        pointer-events: none;
+        position: relative;
+        z-index: 10;
+        background-color: $color-bordo;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9em;
+        width: 70%;
+        margin: -15px auto 0 auto;
+      }
+
+      .title{
+        margin: 10px 0 5px 0;
+        h4 {
+          font-family: 'Din Cond', arial;
+          font-size: 1.1em;
+          font-weight: bold;
+          margin: 0;
+          a{
+            display: block;
+            color: black;
+          }
+        }
+      }
+      .excerpt {
+        font-family: Arial;
+        font-size: 0.9em;
+        line-height: 1.4;
+      }
+      .link{
+        margin-top: 10px;
+
+        a{
+          font-size: 1.2em;
+        }
+      }
+
+    }
+  }
+}
+.szolglist-holder{
+  .content-holder{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    & > article {
+      flex-basis: calc(100%/4);
+      padding: 10px;
+      text-align: center;
+
+      .img {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 200px;
+        position: relative;
+        border: 5px solid $color-arany;
+        -webkit-transition: all .4s;
+        transition: all .4s;
+
+      }
+      &:hover {
+        .img {
+          border: 10px solid $color-bordo;
+        }
+      }
+
+      .title{
+        margin: 15px 0 10px 0;
+        h3{
+          font-family: 'Din Cond', arial;
+          font-size: 1.4em;
+          margin: 0 !important;
+
+          a{
+            color: #1d1c18;
+          }
+        }
+      }
+
+      .price {
+        width: 60%;
+        text-align: center;
+        color: #5b584f;
+        background-color: #f1ecda;
+        padding: 10px;
+        margin: 0 auto;
+        line-height: 1;
+      }
+    }
+  }
+}
+.szalag-foglalas{
+  color: white;
+  font-size: 1.3em;
+  p{
+    margin: 0;
+  }
+  a{
+    font-size: 0.8em;
+    background-color: #2d2c40;
+    margin-left: 10px;
+    color: white;
+    padding: 12px;
   }
 }

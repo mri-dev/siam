@@ -1,42 +1,99 @@
-/* line 3, sass/style.scss */
+/* DinTextCompPro-Medium */
+@font-face {
+  font-family: 'Din Comp';
+  src: url("../../assets/fonts/din/DinTextCompPro-Medium.eot");
+  src: url("../../assets/fonts/din/DinTextCompPro-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/din/DinTextCompPro-Medium.woff") format("woff"), url("../../assets/fonts/din/DinTextCompPro-Medium.ttf") format("truetype"), url("../../assets/fonts/din/DinTextCompPro-Medium.svg#Din Comp") format("svg");
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* DinTextCompPro-Bold */
+@font-face {
+  font-family: 'Din Comp';
+  src: url("../../assets/fonts/din/DinTextCompPro-Bold.eot");
+  src: url("../../assets/fonts/din/DinTextCompPro-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/din/DinTextCompPro-Bold.woff") format("woff"), url("../../assets/fonts/din/DinTextCompPro-Bold.ttf") format("truetype"), url("../../assets/fonts/din/DinTextCompPro-Bold.svg#Din Comp") format("svg");
+  font-style: bold;
+  font-weight: 700;
+}
+
+/* DinTextCondPro-Regular */
+@font-face {
+  font-family: 'Din Cond';
+  src: url("../../assets/fonts/din/DinTextCondPro-Regular.eot");
+  src: url("../../assets/fonts/din/DinTextCondPro-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/din/DinTextCondPro-Regular.woff") format("woff"), url("../../assets/fonts/din/DinTextCondPro-Regular.ttf") format("truetype"), url("../../assets/fonts/din/DinTextCondPro-Regular.svg#Din Cond") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* DinTextCondPro-Bold */
+@font-face {
+  font-family: 'Din Cond';
+  src: url("../../assets/fonts/din/DinTextCondPro-Bold.eot");
+  src: url("../../assets/fonts/din/DinTextCondPro-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/din/DinTextCondPro-Bold.woff") format("woff"), url("../../assets/fonts/din/DinTextCondPro-Bold.ttf") format("truetype"), url("../../assets/fonts/din/DinTextCondPro-Bold.svg#Din Cond") format("svg");
+  font-style: bold;
+  font-weight: 700;
+}
+
+/* EnglischeSchreibschriftBQ-Bold */
+@font-face {
+  font-family: 'handwrite';
+  src: url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.eot");
+  src: url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.woff") format("woff"), url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.ttf") format("truetype"), url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.svg#Din Cond") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'handwrite';
+  src: url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.eot");
+  src: url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.woff") format("woff"), url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.ttf") format("truetype"), url("../../assets/fonts/englische/EnglischeSchreibschriftBQ-Bold.svg#Din Cond") format("svg");
+  font-style: bold;
+  font-weight: 700;
+}
+
+/* line 5, sass/style.scss */
 body, html {
   height: 100%;
   position: relative;
 }
 
-/* line 8, sass/style.scss */
+/* line 10, sass/style.scss */
 body {
   background-color: #faf8f2;
 }
 
-/* line 12, sass/style.scss */
+/* line 14, sass/style.scss */
 .fusion-main-menu > ul > li > a {
   text-transform: uppercase;
 }
 
-/* line 16, sass/style.scss */
+/* line 18, sass/style.scss */
+1
 .fusion-secondary-header {
   color: white;
 }
-/* line 18, sass/style.scss */
-.fusion-secondary-header a {
+/* line 20, sass/style.scss */
+1
+. fusion-secondary-header  a {
   color: white;
 }
-/* line 22, sass/style.scss */
-.fusion-secondary-header .contacts span.email {
+/* line 24, sass/style.scss */
+1
+. fusion-secondary-header  .contacts span.email {
   margin-right: 20px;
 }
-/* line 26, sass/style.scss */
-.fusion-secondary-header .contacts i {
+/* line 28, sass/style.scss */
+1
+. fusion-secondary-header  .contacts i {
   margin-right: 5px;
 }
 
-/* line 32, sass/style.scss */
+/* line 34, sass/style.scss */
 .fusion-header {
   padding: 5px 0;
 }
 
-/* line 35, sass/style.scss */
+/* line 37, sass/style.scss */
 .fusion-header .fusion-row {
   padding: 0 140px;
   background-image: url("../../images/menudesign_left.svg"), url("../../images/menudesign_right.svg");
@@ -44,18 +101,70 @@ body {
   background-position: left center, right center;
 }
 
-/* line 41, sass/style.scss */
+/* line 43, sass/style.scss */
 .fusion-main-menu > ul > li > a span {
   padding-bottom: 4px;
   border-bottom: 4px solid transparent;
 }
 
-/* line 45, sass/style.scss */
+/* line 47, sass/style.scss */
 .fusion-main-menu > ul > li.current_page_item > a span {
   border-bottom: 4px solid #651b1a;
 }
 
-/* line 49, sass/style.scss */
+/* line 52, sass/style.scss */
+body.home h1 {
+  font-family: 'handwrite', sans-serif;
+  font-weight: bold;
+  font-size: 4vw;
+  color: #daae2d;
+}
+/* line 58, sass/style.scss */
+body.home #main {
+  margin-top: -170px !important;
+}
+
+/* line 63, sass/style.scss */
+main#main {
+  margin-bottom: -50px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 68, sass/style.scss */
+#sliders-container {
+  position: relative;
+}
+
+/* line 71, sass/style.scss */
+#sliders-container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-image: url("../../images/slide-bottom-overlay.svg");
+  background-position: center;
+  height: 100px;
+  width: 100%;
+  background-size: cover;
+}
+
+/* line 82, sass/style.scss */
+.rev_slider_wrapper .shadow-left,
+.rev_slider_wrapper .shadow-right {
+  display: none;
+}
+
+/* line 85, sass/style.scss */
+.avada-skin-rev {
+  border: none !important;
+}
+
+/* line 89, sass/style.scss */
+.din-text {
+  font-family: 'Din Cond', sans-serif;
+}
+
+/* line 93, sass/style.scss */
 footer.mainfooter {
   background-image: url("../../images/footer_design.svg");
   background-repeat: no-repeat;
@@ -63,36 +172,39 @@ footer.mainfooter {
   background-size: contain;
   height: 375px;
   color: white;
+  position: relative;
+  z-index: 100;
 }
-/* line 57, sass/style.scss */
+/* line 103, sass/style.scss */
 footer.mainfooter .fwrapper {
   width: 1050px;
   max-width: 1050px;
   margin: 0 auto;
   height: 100%;
   position: relative;
+  font-size: 0.84em;
 }
-/* line 64, sass/style.scss */
+/* line 111, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu {
   position: absolute;
   right: 0;
   top: 45px;
   z-index: 10;
 }
-/* line 70, sass/style.scss */
+/* line 117, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu ul, footer.mainfooter .fwrapper .footer-menu li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 77, sass/style.scss */
+/* line 124, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu ul li {
   display: inline-block;
   *display: inline;
   zoom: 1;
   padding: 0 15px;
 }
-/* line 83, sass/style.scss */
+/* line 130, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu ul li a {
   text-transform: uppercase;
   display: block;
@@ -103,11 +215,11 @@ footer.mainfooter .fwrapper .footer-menu ul li a {
   border-bottom-width: 3px;
   border-bottom-color: transparent;
 }
-/* line 95, sass/style.scss */
+/* line 142, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu ul li.current a {
   border-bottom-color: white;
 }
-/* line 103, sass/style.scss */
+/* line 150, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,7 +230,7 @@ footer.mainfooter .fwrapper .footer-content-holder {
   position: relative;
   padding: 20px 0;
 }
-/* line 113, sass/style.scss */
+/* line 160, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder .fusion-social-networks .fusion-social-network-icon {
   background: #a67c00;
   border-radius: 15px;
@@ -126,20 +238,20 @@ footer.mainfooter .fwrapper .footer-content-holder .fusion-social-networks .fusi
   padding: 6px;
   width: auto;
 }
-/* line 121, sass/style.scss */
+/* line 168, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder a, footer.mainfooter .fwrapper .footer-content-holder a:visited {
   color: white;
 }
-/* line 125, sass/style.scss */
+/* line 172, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.logo {
   flex-basis: 25%;
   padding-right: 25px;
 }
-/* line 129, sass/style.scss */
+/* line 176, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos {
   flex-basis: calc(75%/2);
 }
-/* line 131, sass/style.scss */
+/* line 178, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,17 +260,17 @@ footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos {
   align-items: flex-end;
   justify-content: space-between;
 }
-/* line 138, sass/style.scss */
+/* line 185, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div {
   line-height: 28px;
 }
-/* line 141, sass/style.scss */
+/* line 188, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email {
   flex-basis: 100%;
   margin-bottom: 10px;
   font-size: 1.2em;
 }
-/* line 148, sass/style.scss */
+/* line 195, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.creator {
   flex-basis: calc(75%/2);
   display: -webkit-box;
@@ -169,13 +281,335 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator {
   justify-content: flex-end;
   padding-bottom: 3px;
 }
-/* line 158, sass/style.scss */
+/* line 205, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.creator img.ref {
   height: 28px;
   position: relative;
   margin-top: -11px;
 }
-/* line 164, sass/style.scss */
+/* line 211, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   padding: 0 5px;
+}
+
+/* line 219, sass/style.scss */
+.des-bg {
+  background-image: url("../../images/bgoverlay.svg");
+  background-repeat: no-repeat !important;
+  background-position: center top !important;
+  background-size: cover !important;
+}
+/* line 225, sass/style.scss */
+.des-bg.des-bg-topstart {
+  background-position: center top 110px !important;
+}
+
+/* line 230, sass/style.scss */
+.content-logo-holder {
+  background-image: url("../../images/logo-content-backdes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  margin: 10px auto;
+  position: relative;
+}
+/* line 239, sass/style.scss */
+.content-logo-holder .airtext {
+  position: absolute;
+  font-size: 1.4em;
+  font-weight: 300;
+  top: 12%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+/* line 249, sass/style.scss */
+.content-logo-holder img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 48%;
+}
+
+/* line 259, sass/style.scss */
+.welcome-text {
+  margin: -99px 15% 0 15% !important;
+  line-height: 1.4;
+  font-size: 1.2em;
+}
+
+/* line 264, sass/style.scss */
+.headdivider-holder {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+/* line 273, sass/style.scss */
+.headdivider-holder .backline {
+  flex: 1;
+  height: 1px;
+  background-color: #a67c00;
+}
+/* line 279, sass/style.scss */
+.headdivider-holder .text {
+  padding: 0 20px;
+}
+/* line 284, sass/style.scss */
+.headdivider-holder h2 {
+  font-family: 'handwrite', sans-serif !important;
+  font-size: 2.2em !important;
+  color: #a67c00 !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+/* line 293, sass/style.scss */
+body.home .home-h1 h1 {
+  margin: 0 !important;
+}
+
+/* line 297, sass/style.scss */
+.datepickerbutton-holder {
+  text-align: center;
+  position: relative;
+}
+/* line 301, sass/style.scss */
+.datepickerbutton-holder a.datepicker-btn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* line 309, sass/style.scss */
+.datepicker-btn {
+  font-family: 'Din Comp', arial;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border: 5px solid #dcb850;
+  box-shadow: 0 7px 15px -4px #73611e;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a67c00+0,ffdc73+100 */
+  background: #a67c00;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #a67c00 0%, #ffdc73 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #a67c00 0%, #ffdc73 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #a67c00 0%, #ffdc73 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a67c00', endColorstr='#ffdc73',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+/* line 325, sass/style.scss */
+.datepicker-btn:hover {
+  color: white;
+}
+
+/* line 329, sass/style.scss */
+.news-header {
+  height: 420px;
+}
+
+/* line 333, sass/style.scss */
+.fusion-secondary-header {
+  color: white !important;
+}
+/* line 335, sass/style.scss */
+.fusion-secondary-header a {
+  color: white !important;
+}
+
+/* line 340, sass/style.scss */
+.news-holder-content {
+  font-size: 1.2em;
+  margin-top: -420px !important;
+  line-height: 1.2;
+  color: white;
+  padding-top: 150px !important;
+  font-family: 'Din Cond', arial;
+  background-image: url("../../images/logo-silue.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 28%;
+}
+/* line 352, sass/style.scss */
+.news-holder-content p {
+  margin: 5px 0 !important;
+}
+/* line 356, sass/style.scss */
+.news-holder-content h1 {
+  margin: 0 0 15px 0 !important;
+  color: white !important;
+}
+
+/* line 362, sass/style.scss */
+.bloglist-holder {
+  background: white;
+  margin: 50px auto;
+  padding: 20px;
+}
+/* line 367, sass/style.scss */
+.bloglist-holder .content-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  color: #262626;
+  font-size: 0.84em;
+}
+/* line 376, sass/style.scss */
+.bloglist-holder .content-holder > article {
+  padding: 20px;
+  text-align: center;
+  flex-basis: calc(100% / 3);
+}
+/* line 381, sass/style.scss */
+.bloglist-holder .content-holder > article .image {
+  position: relative;
+  overflow: hidden;
+  height: 290px;
+}
+/* line 386, sass/style.scss */
+.bloglist-holder .content-holder > article .image img {
+  height: 100%;
+  width: auto;
+  max-width: initial;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 398, sass/style.scss */
+.bloglist-holder .content-holder > article .image.portrait img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+/* line 406, sass/style.scss */
+.bloglist-holder .content-holder > article .date {
+  pointer-events: none;
+  position: relative;
+  z-index: 10;
+  background-color: #651b1a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+  width: 70%;
+  margin: -15px auto 0 auto;
+}
+/* line 419, sass/style.scss */
+.bloglist-holder .content-holder > article .title {
+  margin: 10px 0 5px 0;
+}
+/* line 421, sass/style.scss */
+.bloglist-holder .content-holder > article .title h4 {
+  font-family: 'Din Cond', arial;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+}
+/* line 426, sass/style.scss */
+.bloglist-holder .content-holder > article .title h4 a {
+  display: block;
+  color: black;
+}
+/* line 432, sass/style.scss */
+.bloglist-holder .content-holder > article .excerpt {
+  font-family: Arial;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+/* line 437, sass/style.scss */
+.bloglist-holder .content-holder > article .link {
+  margin-top: 10px;
+}
+/* line 440, sass/style.scss */
+.bloglist-holder .content-holder > article .link a {
+  font-size: 1.2em;
+}
+
+/* line 449, sass/style.scss */
+.szolglist-holder .content-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+/* line 455, sass/style.scss */
+.szolglist-holder .content-holder > article {
+  flex-basis: calc(100%/4);
+  padding: 10px;
+  text-align: center;
+}
+/* line 460, sass/style.scss */
+.szolglist-holder .content-holder > article .img {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 200px;
+  position: relative;
+  border: 5px solid #a67c00;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+/* line 472, sass/style.scss */
+.szolglist-holder .content-holder > article:hover .img {
+  border: 10px solid #651b1a;
+}
+/* line 477, sass/style.scss */
+.szolglist-holder .content-holder > article .title {
+  margin: 15px 0 10px 0;
+}
+/* line 479, sass/style.scss */
+.szolglist-holder .content-holder > article .title h3 {
+  font-family: 'Din Cond', arial;
+  font-size: 1.4em;
+  margin: 0 !important;
+}
+/* line 484, sass/style.scss */
+.szolglist-holder .content-holder > article .title h3 a {
+  color: #1d1c18;
+}
+/* line 490, sass/style.scss */
+.szolglist-holder .content-holder > article .price {
+  width: 60%;
+  text-align: center;
+  color: #5b584f;
+  background-color: #f1ecda;
+  padding: 10px;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+/* line 502, sass/style.scss */
+.szalag-foglalas {
+  color: white;
+  font-size: 1.3em;
+}
+/* line 505, sass/style.scss */
+.szalag-foglalas p {
+  margin: 0;
+}
+/* line 508, sass/style.scss */
+.szalag-foglalas a {
+  font-size: 0.8em;
+  background-color: #2d2c40;
+  margin-left: 10px;
+  color: white;
+  padding: 12px;
 }
