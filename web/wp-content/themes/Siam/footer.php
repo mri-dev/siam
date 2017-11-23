@@ -27,6 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * Get the correct page ID.
 		 */
 		$c_page_id = Avada()->fusion_library->get_page_id();
+		$phone = get_option('contact_phone', true);
 		?>
 
 
@@ -61,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <a href="mailto:<?=$email?>"><?=$email?></a>
               </div>
               <div class="phone">
-                <i class="fa fa-phone"></i> <a href="tel:+36301234567"></a>+36 30 123 4567
+                <i class="fa fa-phone"></i> <a href="tel:<?php echo str_replace(array(' ', '(',')', '-'),'',$phone); ?>"></a><?php echo $phone; ?>
               </div>
               <div class="social">
                 <?php

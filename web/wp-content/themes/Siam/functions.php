@@ -61,11 +61,56 @@ function rd_init()
 		'not_found' => 'Nincsenek %s a listában.',
 		'add_new_item' => 'Új %s létrehozása',
 	) );
-	//$ref->set_metabox_cb('weproref_metaboxes');
+	$ref->set_metabox_cb('szolgaltatas_metaboxes');
 	$ref->create();
-
 }
 add_action('init', 'rd_init');
+
+function szolgaltatas_metaboxes()
+{
+  add_meta_box('szolgaltatas_mb', 'Szolgáltatás adatok', 'szolgaltatas_mb', 'szolgaltatas');
+}
+
+
+function szolgaltatas_mb()
+{
+  global $post;
+
+  // Noncename needed to verify where the data originated
+	echo '<input type="hidden" name="szolgaltatas_noncename" id="szolgaltatas_noncename" value="' .
+	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+
+  $key = 'price';
+	$val = get_post_meta($post->ID, $key, true);
+  echo '<p><label for="szolgaltatas_'.$key.'" class="post-attributes-label">Szolgáltatás ára</label></p>';
+  echo '<input type="text" id="szolgaltatas_'.$key.'" name="'.$key.'" value="' . $val  . '" class="widefat" />';
+
+}
+
+function szolgaltatas_save_posttype_meta( $post_id, $post )
+{
+	if ( !wp_verify_nonce( $_POST['szolgaltatas_noncename'], plugin_basename(__FILE__) )) {
+	   return $post->ID;
+	}
+
+	if ( !current_user_can( 'edit_post', $post->ID )) return $post->ID;
+
+  $events_meta = array();
+
+  $events_meta['price'] = $_POST['price'];
+
+  foreach ((array)$events_meta as $key => $value) { // Cycle through the $events_meta array!
+		if( $post->post_type == 'revision' ) return; // Don't store custom data twice
+		$value = implode(',', (array)$value); // If $value is an array, make it a CSV (unlikely)
+		if(get_post_meta($post->ID, $key, FALSE)) { // If the custom field already has a value
+			update_post_meta($post->ID, $key, $value);
+		} else { // If the custom field doesn't have a value
+			add_post_meta($post->ID, $key, $value);
+		}
+		if(!$value) delete_post_meta($post->ID, $key); // Delete if blank
+	}
+}
+add_action('save_post', 'szolgaltatas_save_posttype_meta', 1, 2);
 
 function jscustomcode () {
   ?>
@@ -73,10 +118,14 @@ function jscustomcode () {
     (function($){
       $( window ).resize(function() {
         var wv = $(window).width();
+        var footermenuvp = 30;
         console.log( wv );
         // fixheightbywidth
         $('.fixheightbywidth').css({
           height: $('.fixheightbywidth').width()
+        });
+        $('.footer-menu').css({
+          top: wv/footermenuvp
         });
       });
     })(jQuery);
@@ -84,3 +133,46 @@ function jscustomcode () {
   <?
 }
 add_action('wp_footer', 'jscustomcode');
+
+function app_register_setting() {
+	register_setting( 'general', 'contact_phone', 'strval' );
+  register_setting( 'general', 'contact_address', 'strval' );
+  register_setting( 'general', 'nyitvatartas', 'strval' );
+
+  add_settings_field(
+      'contact_phone',
+      __('Telefonszám', 'Avada'),
+      'contact_phone_cb',
+      'general'
+  );
+  add_settings_field(
+      'contact_address',
+      __('Cím', 'Avada'),
+      'contact_address_cb',
+      'general'
+  );
+  add_settings_field(
+      'nyitvatartas',
+      __('Nyitva tartás', 'Avada'),
+      'nyitvatartas_cb',
+      'general'
+  );
+}
+add_action( 'admin_init', 'app_register_setting' );
+
+function contact_phone_cb()
+{
+  $option = get_option('contact_phone');
+  echo '<input class="regular-text ltr" type="text" name="contact_phone" value="' . $option . '" />';
+}
+function contact_address_cb()
+{
+  $option = get_option('contact_address');
+  echo '<input class="regular-text ltr" type="text" name="contact_address" value="' . $option . '" />';
+}
+
+function nyitvatartas_cb()
+{
+  $option = get_option('nyitvatartas');
+  echo '<input class="regular-text ltr" type="text" name="nyitvatartas" value="' . $option . '" />';
+}

@@ -173,7 +173,7 @@ footer.mainfooter {
   height: 375px;
   color: white;
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 /* line 103, sass/style.scss */
 footer.mainfooter .fwrapper {
@@ -359,9 +359,36 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
 }
 /* line 279, sass/style.scss */
 .headdivider-holder .text {
-  padding: 0 20px;
+  padding: 0 110px;
+  position: relative;
 }
-/* line 284, sass/style.scss */
+/* line 283, sass/style.scss */
+.headdivider-holder .text:before {
+  content: "";
+  left: 0;
+  top: -39%;
+  background-image: url("../../images/designtitle_left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  background-size: contain;
+}
+/* line 295, sass/style.scss */
+.headdivider-holder .text:after {
+  content: "";
+  right: 0;
+  top: -39%;
+  background-image: url("../../images/designtitle_right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  background-size: contain;
+}
+/* line 310, sass/style.scss */
 .headdivider-holder h2 {
   font-family: 'handwrite', sans-serif !important;
   font-size: 2.2em !important;
@@ -370,17 +397,17 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   margin: 0 !important;
 }
 
-/* line 293, sass/style.scss */
+/* line 319, sass/style.scss */
 body.home .home-h1 h1 {
   margin: 0 !important;
 }
 
-/* line 297, sass/style.scss */
+/* line 323, sass/style.scss */
 .datepickerbutton-holder {
   text-align: center;
   position: relative;
 }
-/* line 301, sass/style.scss */
+/* line 327, sass/style.scss */
 .datepickerbutton-holder a.datepicker-btn {
   position: absolute;
   left: 50%;
@@ -389,7 +416,7 @@ body.home .home-h1 h1 {
   z-index: 10;
 }
 
-/* line 309, sass/style.scss */
+/* line 335, sass/style.scss */
 .datepicker-btn {
   font-family: 'Din Comp', arial;
   font-size: 1.9em;
@@ -411,26 +438,47 @@ body.home .home-h1 h1 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a67c00', endColorstr='#ffdc73',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 325, sass/style.scss */
+/* line 351, sass/style.scss */
 .datepicker-btn:hover {
   color: white;
 }
 
-/* line 329, sass/style.scss */
+/* line 355, sass/style.scss */
 .news-header {
   height: 420px;
 }
 
-/* line 333, sass/style.scss */
+/* line 359, sass/style.scss */
 .fusion-secondary-header {
   color: white !important;
 }
-/* line 335, sass/style.scss */
+/* line 361, sass/style.scss */
 .fusion-secondary-header a {
   color: white !important;
 }
+/* line 366, sass/style.scss */
+.fusion-secondary-header .contacts span {
+  margin-right: 15px;
+  vertical-align: middle;
+}
+/* line 370, sass/style.scss */
+.fusion-secondary-header .contacts span i {
+  margin-right: 5px;
+  font-size: 14px;
+}
+/* line 378, sass/style.scss */
+.fusion-secondary-header .fusion-alignright .opens {
+  float: right;
+  line-height: 46px;
+  margin-right: 15px;
+}
+/* line 383, sass/style.scss */
+.fusion-secondary-header .fusion-alignright .opens i {
+  margin-right: 5px;
+  font-size: 14px;
+}
 
-/* line 340, sass/style.scss */
+/* line 391, sass/style.scss */
 .news-holder-content {
   font-size: 1.2em;
   margin-top: -420px !important;
@@ -443,23 +491,24 @@ body.home .home-h1 h1 {
   background-position: top center;
   background-size: 28%;
 }
-/* line 352, sass/style.scss */
+/* line 403, sass/style.scss */
 .news-holder-content p {
   margin: 5px 0 !important;
 }
-/* line 356, sass/style.scss */
+/* line 407, sass/style.scss */
 .news-holder-content h1 {
   margin: 0 0 15px 0 !important;
   color: white !important;
 }
 
-/* line 362, sass/style.scss */
+/* line 413, sass/style.scss */
 .bloglist-holder {
   background: white;
   margin: 50px auto;
   padding: 20px;
+  position: relative;
 }
-/* line 367, sass/style.scss */
+/* line 419, sass/style.scss */
 .bloglist-holder .content-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,19 +518,19 @@ body.home .home-h1 h1 {
   color: #262626;
   font-size: 0.84em;
 }
-/* line 376, sass/style.scss */
+/* line 428, sass/style.scss */
 .bloglist-holder .content-holder > article {
   padding: 20px;
   text-align: center;
   flex-basis: calc(100% / 3);
 }
-/* line 381, sass/style.scss */
+/* line 433, sass/style.scss */
 .bloglist-holder .content-holder > article .image {
   position: relative;
   overflow: hidden;
   height: 290px;
 }
-/* line 386, sass/style.scss */
+/* line 438, sass/style.scss */
 .bloglist-holder .content-holder > article .image img {
   height: 100%;
   width: auto;
@@ -492,13 +541,13 @@ body.home .home-h1 h1 {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 398, sass/style.scss */
+/* line 450, sass/style.scss */
 .bloglist-holder .content-holder > article .image.portrait img {
   height: auto;
   width: 100%;
   max-width: 100%;
 }
-/* line 406, sass/style.scss */
+/* line 458, sass/style.scss */
 .bloglist-holder .content-holder > article .date {
   pointer-events: none;
   position: relative;
@@ -511,38 +560,60 @@ body.home .home-h1 h1 {
   width: 70%;
   margin: -15px auto 0 auto;
 }
-/* line 419, sass/style.scss */
+/* line 471, sass/style.scss */
 .bloglist-holder .content-holder > article .title {
   margin: 10px 0 5px 0;
 }
-/* line 421, sass/style.scss */
+/* line 473, sass/style.scss */
 .bloglist-holder .content-holder > article .title h4 {
   font-family: 'Din Cond', arial;
   font-size: 1.1em;
   font-weight: bold;
   margin: 0;
 }
-/* line 426, sass/style.scss */
+/* line 478, sass/style.scss */
 .bloglist-holder .content-holder > article .title h4 a {
   display: block;
   color: black;
 }
-/* line 432, sass/style.scss */
+/* line 484, sass/style.scss */
 .bloglist-holder .content-holder > article .excerpt {
   font-family: Arial;
   font-size: 0.9em;
   line-height: 1.4;
 }
-/* line 437, sass/style.scss */
+/* line 489, sass/style.scss */
 .bloglist-holder .content-holder > article .link {
   margin-top: 10px;
 }
-/* line 440, sass/style.scss */
+/* line 492, sass/style.scss */
 .bloglist-holder .content-holder > article .link a {
   font-size: 1.2em;
 }
+/* line 500, sass/style.scss */
+.bloglist-holder:before, .bloglist-holder:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  height: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+/* line 511, sass/style.scss */
+.bloglist-holder:before {
+  left: -100px;
+  background-image: url("../../images/vert_des_ele_left.svg");
+}
+/* line 515, sass/style.scss */
+.bloglist-holder:after {
+  right: -100px;
+  background-image: url("../../images/vert_des_ele_right.svg");
+}
 
-/* line 449, sass/style.scss */
+/* line 521, sass/style.scss */
 .szolglist-holder .content-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,13 +621,13 @@ body.home .home-h1 h1 {
   flex-wrap: wrap;
   align-items: flex-start;
 }
-/* line 455, sass/style.scss */
+/* line 527, sass/style.scss */
 .szolglist-holder .content-holder > article {
   flex-basis: calc(100%/4);
   padding: 10px;
   text-align: center;
 }
-/* line 460, sass/style.scss */
+/* line 532, sass/style.scss */
 .szolglist-holder .content-holder > article .img {
   width: 90%;
   margin: 0 auto;
@@ -567,25 +638,25 @@ body.home .home-h1 h1 {
   -webkit-transition: all .4s;
   transition: all .4s;
 }
-/* line 472, sass/style.scss */
+/* line 544, sass/style.scss */
 .szolglist-holder .content-holder > article:hover .img {
   border: 10px solid #651b1a;
 }
-/* line 477, sass/style.scss */
+/* line 549, sass/style.scss */
 .szolglist-holder .content-holder > article .title {
   margin: 15px 0 10px 0;
 }
-/* line 479, sass/style.scss */
+/* line 551, sass/style.scss */
 .szolglist-holder .content-holder > article .title h3 {
   font-family: 'Din Cond', arial;
   font-size: 1.4em;
   margin: 0 !important;
 }
-/* line 484, sass/style.scss */
+/* line 556, sass/style.scss */
 .szolglist-holder .content-holder > article .title h3 a {
   color: #1d1c18;
 }
-/* line 490, sass/style.scss */
+/* line 562, sass/style.scss */
 .szolglist-holder .content-holder > article .price {
   width: 60%;
   text-align: center;
@@ -596,20 +667,116 @@ body.home .home-h1 h1 {
   line-height: 1;
 }
 
-/* line 502, sass/style.scss */
+/* line 574, sass/style.scss */
 .szalag-foglalas {
   color: white;
   font-size: 1.3em;
 }
-/* line 505, sass/style.scss */
+/* line 577, sass/style.scss */
 .szalag-foglalas p {
   margin: 0;
 }
-/* line 508, sass/style.scss */
+/* line 580, sass/style.scss */
 .szalag-foglalas a {
   font-size: 0.8em;
   background-color: #2d2c40;
   margin-left: 10px;
   color: white;
   padding: 12px;
+}
+
+/* line 589, sass/style.scss */
+.single .fusion-sharing-box {
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding: 15px !important;
+  height: auto;
+}
+/* line 594, sass/style.scss */
+.single .fusion-sharing-box h4 {
+  padding: 0 !important;
+}
+
+/* line 598, sass/style.scss */
+.fusion-social-networks.boxed-icons .fusion-social-network-icon {
+  margin: 0 5px;
+}
+
+/* line 602, sass/style.scss */
+.szolgaltatas-page-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0 0 40px 0;
+}
+/* line 610, sass/style.scss */
+.szolgaltatas-page-holder > div.left-cont {
+  flex-basis: 30%;
+}
+/* line 613, sass/style.scss */
+.szolgaltatas-page-holder > div.right-cont {
+  flex-basis: 70%;
+  padding-left: 30px;
+}
+/* line 618, sass/style.scss */
+.szolgaltatas-page-holder .title {
+  margin-bottom: 20px;
+}
+/* line 620, sass/style.scss */
+.szolgaltatas-page-holder .title h1 {
+  font-size: 2.8em !important;
+  font-family: 'Din Comp', arial !important;
+  color: #8e2624 !important;
+  margin: 0 !important;
+}
+/* line 628, sass/style.scss */
+.szolgaltatas-page-holder .price {
+  text-align: center;
+  color: #222222;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+/* line 634, sass/style.scss */
+.szolgaltatas-page-holder .price .t {
+  font-size: 1.5em;
+  color: #8e2624;
+  font-weight: bold;
+  font-family: 'Din Cond', arial;
+}
+/* line 642, sass/style.scss */
+.szolgaltatas-page-holder .foglalas {
+  text-align: center;
+  margin-top: 25px;
+}
+/* line 645, sass/style.scss */
+.szolgaltatas-page-holder .foglalas a {
+  background: #ffbf00;
+  border: 3px solid #efe3c0;
+  font-family: 'Din Cond', arial;
+  font-size: 1.2em;
+  color: white;
+  padding: 10px;
+  margin: 10px auto;
+}
+/* line 656, sass/style.scss */
+.szolgaltatas-page-holder .img {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 200px;
+  position: relative;
+  border: 5px solid #a67c00;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin-bottom: 20px;
+}
+
+/* line 669, sass/style.scss */
+h2.entry-title {
+  font-size: 1.8em !important;
+  font-family: 'Din Cond', arial !important;
+  color: #ffbf00 !important;
+  font-weight: bold !important;
 }
