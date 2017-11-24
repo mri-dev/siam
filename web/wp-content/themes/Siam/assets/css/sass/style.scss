@@ -8,7 +8,7 @@ body, html{
 }
 
 body{
-  background-color: #faf8f2;
+  background-color: #faf8f2 !important;
 }
 
 .fusion-main-menu > ul > li > a{
@@ -61,7 +61,7 @@ body.home {
 }
 
 main#main {
-  margin-bottom: -50px !important;
+  margin-bottom: -60px !important;
   position: relative;
   overflow: hidden;
 }
@@ -663,6 +663,152 @@ body.home .home-h1{
     -webkit-transition: all .4s;
     transition: all .4s;
     margin-bottom: 20px;
+  }
+}
+
+.contact-form-holder{
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 25px;
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid #902524;
+
+  .flxtbl{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    & > div {
+      padding: 5px;
+
+      & > label {
+        font-size: 0.8em;
+        display: block;
+        margin: 0 0 5px 0;
+      }
+    }
+
+    & > div.name {
+      order: 1;
+      flex-basis: 50%;
+    }
+    & > div.phone {
+      order: 2;
+      flex-basis: 50%;
+    }
+    & > div.email {
+      order: 3;
+      flex-basis: 40%;
+    }
+    & > div.szolgaltatas {
+      order: 4;
+      flex-basis: 60%;
+    }
+    & > div.idopont {
+      order: 5;
+      flex-basis: 100%;
+      text-align: center;
+      padding: 10px 0;
+      label {
+        font-size: 1.5em;
+      }
+      .date{
+        width: 240px;
+        margin: 0 auto;
+        input{
+          font-size: 1.75em;
+          text-align: center;
+          color: orange;
+          padding: 25px 15px;
+        }
+        .input-group-addon{
+          background: white !important;
+          border: 1px solid #f3e7d2;
+          border-left: none;
+        }
+      }
+
+      .itext{
+        font-size: 0.7em;
+        margin-top: 5px;
+        color: #b17676;
+      }
+    }
+    & > div.uzenet {
+      order: 6;
+      flex-basis: 100%;
+      label {
+        text-align: center;
+      }
+    }
+    & > div.recaptcha {
+      order: 7;
+      flex-basis: 100%;
+    }
+    & > div.btns {
+      order: 8;
+      flex-basis: 100%;
+    }
+
+    input, select, textarea{
+      border: 1px solid #f3eddc;
+      background: white;
+      padding: 0 15px;
+      line-height: 40px;
+      height: 40px;
+      color: #651b1a;
+      font-family: 'Din Comp', arial;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px -2px #cebbb1;
+
+      &.missing{
+        border: 1px solid #ff5252;
+        background: #ff5b5b1c;
+      }
+    }
+
+    select {
+      width: 100%;
+    }
+
+    textarea{
+      width: 100%;
+      height: auto;
+      min-height: 150px;
+      font-size: 0.9em;
+      font-weight: normal;
+      line-height: 1.2;
+      padding: 10px;
+    }
+
+    button {
+      background: $color-bordo;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-family: 'Din Cond', arial;
+      cursor: pointer;
+      &.in-progress{
+        background: #ff6060;
+      }
+      
+      &.sended {
+        background: #88b51b;
+      }
+    }
+
+    .accept-text{
+      font-size: 0.7em;
+      margin: 10px 0 0 0;
+      color: $color-bordo;
+    }
   }
 }
 

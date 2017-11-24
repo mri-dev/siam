@@ -5,11 +5,12 @@ define('DOMAIN', $_SERVER['HTTP_HOST']);
 define('IFROOT', str_replace(get_option('siteurl'), '//'.DOMAIN, get_stylesheet_directory_uri()));
 define('DEVMODE', true);
 define('IMG', IFROOT.'/images');
-//define('GOOGLE_API_KEY', 'AIzaSyA0Mu8_XYUGo9iXhoenj7HTPBIfS2jDU2E');
 define('GOOGLE_API_KEY', 'AIzaSyD99pf6f7JFVgvmiieIvtlJyMlS15I36qg');
 define('LANGKEY','hu');
 define('FB_APP_ID', '');
 define('DEFAULT_LANGUAGE', 'hu_HU');
+define('CAPTCHA_SITE_KEY', '6LfaODoUAAAAADOy8yJEs4l5L8edk-sazDS2qXGN');
+define('CAPTCHA_SECRET_KEY', '6LfaODoUAAAAAAmxUKBb0rK-sphXlgYgOXhCk7dQ');
 
 // Includes
 require_once "includes/include.php";
@@ -22,6 +23,17 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 function custom_theme_enqueue_styles() {
   wp_enqueue_style( 'app-css', IFROOT . '/assets/css/style.css?t=' . ( (DEVMODE === true) ? time() : '' ) );
+
+  wp_enqueue_script('captcha-js', '//www.google.com/recaptcha/api.js');
+  wp_enqueue_script('moments', IFROOT.'/assets/vendors/moments/moments.min.js', array('jquery'));
+  wp_enqueue_script('moment-hu', IFROOT.'/assets/vendors/moments/hu.js', array('jquery'));
+  wp_enqueue_script('transition-bootstrap', IFROOT.'/assets/vendors/bootstrap/transition.js', array('jquery'));
+  wp_enqueue_script('collapse-bootstrap', IFROOT.'/assets/vendors/bootstrap/collapse.js', array('jquery'));
+  wp_enqueue_script('twitter-bootstrap', '//netdna.bootstrapcdn.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
+  wp_enqueue_script('twitter-datepicker', IFROOT.'/assets/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js', array('jquery'));
+
+  wp_enqueue_style( 'bootstrap-css', IFROOT . '/assets/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css');
+  wp_enqueue_style( 'datepicker-css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 }
 add_action( 'wp_enqueue_scripts', 'custom_theme_enqueue_styles', 100 );
 
@@ -37,7 +49,7 @@ add_action( 'after_setup_theme', 'avada_lang_setup' );
 function ajax_requests()
 {
   $ajax = new AjaxRequests();
-  //$ajax->contact_form();
+  $ajax->contact_form();
 }
 add_action( 'init', 'ajax_requests' );
 

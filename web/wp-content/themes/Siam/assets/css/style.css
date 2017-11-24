@@ -59,7 +59,7 @@ body, html {
 
 /* line 10, sass/style.scss */
 body {
-  background-color: #faf8f2;
+  background-color: #faf8f2 !important;
 }
 
 /* line 14, sass/style.scss */
@@ -126,7 +126,7 @@ body.home #main {
 
 /* line 63, sass/style.scss */
 main#main {
-  margin-bottom: -50px !important;
+  margin-bottom: -60px !important;
   position: relative;
   overflow: hidden;
 }
@@ -774,6 +774,166 @@ body.home .home-h1 h1 {
 }
 
 /* line 669, sass/style.scss */
+.contact-form-holder {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 25px;
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid #902524;
+}
+/* line 677, sass/style.scss */
+.contact-form-holder .flxtbl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+/* line 684, sass/style.scss */
+.contact-form-holder .flxtbl > div {
+  padding: 5px;
+}
+/* line 687, sass/style.scss */
+.contact-form-holder .flxtbl > div > label {
+  font-size: 0.8em;
+  display: block;
+  margin: 0 0 5px 0;
+}
+/* line 694, sass/style.scss */
+.contact-form-holder .flxtbl > div.name {
+  order: 1;
+  flex-basis: 50%;
+}
+/* line 698, sass/style.scss */
+.contact-form-holder .flxtbl > div.phone {
+  order: 2;
+  flex-basis: 50%;
+}
+/* line 702, sass/style.scss */
+.contact-form-holder .flxtbl > div.email {
+  order: 3;
+  flex-basis: 40%;
+}
+/* line 706, sass/style.scss */
+.contact-form-holder .flxtbl > div.szolgaltatas {
+  order: 4;
+  flex-basis: 60%;
+}
+/* line 710, sass/style.scss */
+.contact-form-holder .flxtbl > div.idopont {
+  order: 5;
+  flex-basis: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 715, sass/style.scss */
+.contact-form-holder .flxtbl > div.idopont label {
+  font-size: 1.5em;
+}
+/* line 718, sass/style.scss */
+.contact-form-holder .flxtbl > div.idopont .date {
+  width: 240px;
+  margin: 0 auto;
+}
+/* line 721, sass/style.scss */
+.contact-form-holder .flxtbl > div.idopont .date input {
+  font-size: 1.75em;
+  text-align: center;
+  color: orange;
+  padding: 25px 15px;
+}
+/* line 727, sass/style.scss */
+.contact-form-holder .flxtbl > div.idopont .date .input-group-addon {
+  background: white !important;
+  border: 1px solid #f3e7d2;
+  border-left: none;
+}
+/* line 734, sass/style.scss */
+.contact-form-holder .flxtbl > div.idopont .itext {
+  font-size: 0.7em;
+  margin-top: 5px;
+  color: #b17676;
+}
+/* line 740, sass/style.scss */
+.contact-form-holder .flxtbl > div.uzenet {
+  order: 6;
+  flex-basis: 100%;
+}
+/* line 743, sass/style.scss */
+.contact-form-holder .flxtbl > div.uzenet label {
+  text-align: center;
+}
+/* line 747, sass/style.scss */
+.contact-form-holder .flxtbl > div.recaptcha {
+  order: 7;
+  flex-basis: 100%;
+}
+/* line 751, sass/style.scss */
+.contact-form-holder .flxtbl > div.btns {
+  order: 8;
+  flex-basis: 100%;
+}
+/* line 756, sass/style.scss */
+.contact-form-holder .flxtbl input, .contact-form-holder .flxtbl select, .contact-form-holder .flxtbl textarea {
+  border: 1px solid #f3eddc;
+  background: white;
+  padding: 0 15px;
+  line-height: 40px;
+  height: 40px;
+  color: #651b1a;
+  font-family: 'Din Comp', arial;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px -2px #cebbb1;
+}
+/* line 769, sass/style.scss */
+.contact-form-holder .flxtbl input.missing, .contact-form-holder .flxtbl select.missing, .contact-form-holder .flxtbl textarea.missing {
+  border: 1px solid #ff5252;
+  background: #ff5b5b1c;
+}
+/* line 775, sass/style.scss */
+.contact-form-holder .flxtbl select {
+  width: 100%;
+}
+/* line 779, sass/style.scss */
+.contact-form-holder .flxtbl textarea {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  font-size: 0.9em;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 10px;
+}
+/* line 789, sass/style.scss */
+.contact-form-holder .flxtbl button {
+  background: #651b1a;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: 'Din Cond', arial;
+  cursor: pointer;
+}
+/* line 798, sass/style.scss */
+.contact-form-holder .flxtbl button.in-progress {
+  background: #ff6060;
+}
+/* line 802, sass/style.scss */
+.contact-form-holder .flxtbl button.sended {
+  background: #88b51b;
+}
+/* line 807, sass/style.scss */
+.contact-form-holder .flxtbl .accept-text {
+  font-size: 0.7em;
+  margin: 10px 0 0 0;
+  color: #651b1a;
+}
+
+/* line 815, sass/style.scss */
 h2.entry-title {
   font-size: 1.8em !important;
   font-family: 'Din Cond', arial !important;

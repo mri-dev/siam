@@ -28,17 +28,17 @@ class AjaxRequests
     $err_elements_text = '';
 
     $return['passed_params'] = $_POST;
+    $szolgaltatas = $_POST['szolgaltatas'];
     $name = $_POST['name'];
+    $phone = $_POST['phone'];
     $email = $_POST['email'];
-    $temakor = $_POST['temakor'];
-    $targy = $_POST['targy'];
     $uzenet = $_POST['uzenet'];
+    $date = $_POST['date'];
 
     if(empty($name)) $return['missing_elements'][] = 'name';
-    if(empty($email)) $return['missing_elements'][] = 'email';
-    if(empty($temakor)) $return['missing_elements'][] = 'temakor';
-    if(empty($targy)) $return['missing_elements'][] = 'targy';
-    if(empty($uzenet)) $return['missing_elements'][] = 'uzenet';
+    if(empty($phone)) $return['missing_elements'][] = 'phone';
+    if(empty($szolgaltatas)) $return['missing_elements'][] = 'szolgaltatas';
+    if(empty($date)) $return['missing_elements'][] = 'date';
 
     if(!empty($return['missing_elements'])) {
       $return['error']  = 1;
@@ -80,7 +80,7 @@ class AjaxRequests
 
 
     $to       = get_option('admin_email');
-    $subject  = sprintf(__('Üzenet érkezett: %s (%s: %s)'), $name, $temakor, $targy);
+    $subject  = sprintf(__('Új időpont foglalási igény: %s - %s (%s)'), $name, $szolgaltatas, $date);
 
     ob_start();
   	  include(locate_template('templates/mails/contactform.php'));
@@ -92,19 +92,23 @@ class AjaxRequests
     add_filter( 'wp_mail_content_type', array($this, 'getMailFormat') );
 
     $headers    = array();
-    $headers[]  = 'Reply-To: '.$name.' <'.$email.'>';
+    if (!empty($email)) {
+      $headers[]  = 'Reply-To: '.$name.' <'.$email.'>';
+    }
 
     /* */
     $alert = wp_mail( $to, $subject, $message, $headers );
 
-    $headers    = array();
-    $headers[]  = 'Reply-To: '.get_option('blogname').' <no-reply@'.TARGETDOMAIN.'>';
-    $alerttext = true;
-    ob_start();
-  	  include(locate_template('templates/mails/contactform-receiveuser.php'));
-      $message = ob_get_contents();
-		ob_end_clean();
-    $ualert = wp_mail( $email, 'Értesítő: üzenetét megkaptuk.', $message, $headers );
+    if (!empty($email)) {
+      $headers    = array();
+      $headers[]  = 'Reply-To: '.get_option('blogname').' <no-reply@'.TARGETDOMAIN.'>';
+      $alerttext = true;
+      ob_start();
+    	  include(locate_template('templates/mails/contactform-receiveuser.php'));
+        $message = ob_get_contents();
+  		ob_end_clean();
+      $ualert = wp_mail( $email, 'Visszaigazolás: '.$szolgaltatas.' időpont foglalását fogadtuk.', $message, $headers );
+    }
 
     if(!$alert) {
       $return['error']  = 1;

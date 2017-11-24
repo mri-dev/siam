@@ -98,7 +98,6 @@ if ( ! defined( 'ABSPATH' ) ) {
             var w = $(window).width();
             var xpv = 5.33;
             var newfooterheight = w / xpv;
-            console.log(newfooterheight);
             $('footer.mainfooter').css({
               height: newfooterheight
             });
