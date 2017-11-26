@@ -11,10 +11,14 @@ body{
   background-color: #faf8f2 !important;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 .fusion-main-menu > ul > li > a{
   text-transform: uppercase;
 }
-1
+
 .fusion-secondary-header{
   color: white;
   a{
@@ -798,7 +802,7 @@ body.home .home-h1{
       &.in-progress{
         background: #ff6060;
       }
-      
+
       &.sended {
         background: #88b51b;
       }
@@ -809,6 +813,44 @@ body.home .home-h1{
       margin: 10px 0 0 0;
       color: $color-bordo;
     }
+  }
+}
+
+.ajandekutalvany{
+  font-size: 0.85em;
+  line-height: 1.5;
+  background: #f5e8e6;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px -5px #fbbbbb;
+  border: 20px solid transparent;
+  border-image: url(../../images/flower-ico.svg);
+  border-image-repeat: initial;
+  border-image-width: 8px;
+  border-image-slice: 106;
+
+  .title{
+    font-size: 1.8em;
+    font-family: 'Din Cond', arial;
+    color: $color-bordo;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+
+  .redi {
+    margin-top: 25px;
+    a{
+      background: $color-bordo;
+      color: white;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+}
+
+.ajandekutalvany-leir{
+  p {
+    margin: 15px 0 0 0 !important;
   }
 }
 

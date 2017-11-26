@@ -39,6 +39,7 @@ $price = get_post_meta($post->ID, 'price', true);
         <div class="content">
           <?php the_content(); ?>
         </div>
+				<?php echo get_template_part('ajandekutalvany'); ?>
   	  </div>
   	</div>
   <?php endwhile; wp_reset_postdata(); ?>
