@@ -1263,161 +1263,162 @@ h2.entry-title {
   /* line 1059, sass/style.scss */
   body.home #main {
     padding: 0 10px !important;
+    margin-top: -110px !important;
   }
 
-  /* line 1062, sass/style.scss */
+  /* line 1063, sass/style.scss */
   .welcome-text {
     padding: 0 5px;
   }
 
-  /* line 1065, sass/style.scss */
+  /* line 1066, sass/style.scss */
   .fusion-secondary-header .contacts {
     margin-bottom: 10px;
   }
 
-  /* line 1068, sass/style.scss */
+  /* line 1069, sass/style.scss */
   .fusion-secondary-header .contacts span {
     display: block;
     text-align: center;
     width: 100%;
     margin: 0;
   }
-  /* line 1073, sass/style.scss */
+  /* line 1074, sass/style.scss */
   .fusion-secondary-header .contacts span.email {
     display: none;
   }
-  /* line 1076, sass/style.scss */
+  /* line 1077, sass/style.scss */
   .fusion-secondary-header .contacts span.phone {
     font-size: 16px;
   }
-  /* line 1079, sass/style.scss */
+  /* line 1080, sass/style.scss */
   .fusion-secondary-header .contacts span.address {
     display: none;
   }
 
-  /* line 1083, sass/style.scss */
+  /* line 1084, sass/style.scss */
   .fusion-secondary-header .fusion-alignright .opens {
     font-size: 4vw;
   }
-  /* line 1085, sass/style.scss */
+  /* line 1086, sass/style.scss */
   .fusion-secondary-header .fusion-alignright .opens i {
     display: none;
   }
 
-  /* line 1089, sass/style.scss */
+  /* line 1090, sass/style.scss */
   .fusion-mobile-menu-design-modern .fusion-secondary-header {
     padding: 10px !important;
   }
 
-  /* line 1092, sass/style.scss */
+  /* line 1093, sass/style.scss */
   .fusion-mobile-menu-design-modern .fusion-social-links-header {
     margin: 0 0 10px 0;
   }
 
-  /* line 1095, sass/style.scss */
+  /* line 1096, sass/style.scss */
   .szolglist-holder .content-holder > article .title h3 {
     font-size: 4.2vw;
     line-height: 1;
     margin-top: 15px !important;
   }
 
-  /* line 1100, sass/style.scss */
+  /* line 1101, sass/style.scss */
   .szolglist-holder .content-holder > article .price {
     font-size: 3.2vw;
     width: 80%;
   }
 
-  /* line 1104, sass/style.scss */
+  /* line 1105, sass/style.scss */
   footer.mainfooter .fwrapper {
     padding: 0 !important;
   }
 
-  /* line 1107, sass/style.scss */
+  /* line 1108, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email, footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone {
     font-size: 3.2vw;
   }
 
-  /* line 1110, sass/style.scss */
+  /* line 1111, sass/style.scss */
   .news-holder-content {
     background-size: 70%;
   }
 
-  /* line 1113, sass/style.scss */
+  /* line 1114, sass/style.scss */
   .bloglist-holder .content-holder > article {
     flex-basis: 100%;
   }
 
-  /* line 1116, sass/style.scss */
+  /* line 1117, sass/style.scss */
   .bloglist-holder:before, .bloglist-holder:after {
     height: 400px;
   }
 
-  /* line 1119, sass/style.scss */
+  /* line 1120, sass/style.scss */
   .bloglist-holder .content-holder > article .title {
     margin: 10px 0 !important;
   }
-  /* line 1121, sass/style.scss */
+  /* line 1122, sass/style.scss */
   .bloglist-holder .content-holder > article .title h4 {
     font-size: 5.5vw !important;
   }
 
-  /* line 1125, sass/style.scss */
+  /* line 1126, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email, footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone {
     flex-basis: 100%;
     font-size: 5vw;
     margin: 10px 0;
   }
 
-  /* line 1130, sass/style.scss */
+  /* line 1131, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.copy {
     font-size: 4vw;
     margin-top: 40px;
   }
 
-  /* line 1134, sass/style.scss */
+  /* line 1135, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.creator {
     font-size: 3vw;
   }
 
-  /* line 1137, sass/style.scss */
+  /* line 1138, sass/style.scss */
   .contact-form-holder {
     width: 100%;
     padding: 10px;
   }
 
-  /* line 1141, sass/style.scss */
+  /* line 1142, sass/style.scss */
   .contact-form-holder .flxtbl > div {
     flex-basis: 100% !important;
   }
 
-  /* line 1144, sass/style.scss */
+  /* line 1145, sass/style.scss */
   .contact-form-holder .flxtbl > div.idopont label {
     font-size: 4vw;
     line-height: 1;
     margin: 10px 0;
   }
 
-  /* line 1149, sass/style.scss */
+  /* line 1150, sass/style.scss */
   .contact-form-holder .flxtbl > div.recaptcha iframe {
     width: 100% !important;
   }
 
-  /* line 1153, sass/style.scss */
+  /* line 1154, sass/style.scss */
   .szolgaltatas-page-holder > div.left-cont,
   .szolgaltatas-page-holder > div.right-cont {
     flex-basis: 100%;
   }
 
-  /* line 1156, sass/style.scss */
+  /* line 1157, sass/style.scss */
   .szolgaltatas-page-holder > div.right-cont {
     padding: 40px 0 0 0 !important;
   }
 
-  /* line 1159, sass/style.scss */
+  /* line 1160, sass/style.scss */
   .news-holder-content {
     padding: 15px;
   }
-  /* line 1162, sass/style.scss */
+  /* line 1163, sass/style.scss */
   .news-holder-content p {
     padding: 0 10px;
   }
