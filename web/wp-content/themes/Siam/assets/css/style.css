@@ -732,26 +732,39 @@ body.home .home-h1 h1 {
   color: #8e2624 !important;
   margin: 0 !important;
 }
-/* line 632, sass/style.scss */
+/* line 630, sass/style.scss */
+.szolgaltatas-page-holder .title .pagi {
+  margin: 10px 0 0 0;
+  color: #ccc5ae;
+}
+/* line 633, sass/style.scss */
+.szolgaltatas-page-holder .title .pagi .sep {
+  margin: 0 10px;
+}
+/* line 636, sass/style.scss */
+.szolgaltatas-page-holder .title .pagi a {
+  color: #e9b31a;
+}
+/* line 642, sass/style.scss */
 .szolgaltatas-page-holder .price {
   text-align: center;
   color: #222222;
   margin: 0 auto;
   line-height: 1.4;
 }
-/* line 638, sass/style.scss */
+/* line 648, sass/style.scss */
 .szolgaltatas-page-holder .price .t {
   font-size: 1.5em;
   color: #8e2624;
   font-weight: bold;
   font-family: 'Din Cond', arial;
 }
-/* line 646, sass/style.scss */
+/* line 656, sass/style.scss */
 .szolgaltatas-page-holder .foglalas {
   text-align: center;
   margin-top: 25px;
 }
-/* line 649, sass/style.scss */
+/* line 659, sass/style.scss */
 .szolgaltatas-page-holder .foglalas a {
   background: #ffbf00;
   border: 3px solid #efe3c0;
@@ -761,7 +774,7 @@ body.home .home-h1 h1 {
   padding: 10px;
   margin: 10px auto;
 }
-/* line 660, sass/style.scss */
+/* line 670, sass/style.scss */
 .szolgaltatas-page-holder .img {
   width: 90%;
   margin: 0 auto;
@@ -774,7 +787,7 @@ body.home .home-h1 h1 {
   margin-bottom: 20px;
 }
 
-/* line 673, sass/style.scss */
+/* line 683, sass/style.scss */
 .contact-form-holder {
   background: rgba(255, 255, 255, 0.9);
   padding: 25px;
@@ -783,7 +796,7 @@ body.home .home-h1 h1 {
   margin: 0 auto;
   border: 5px solid #902524;
 }
-/* line 681, sass/style.scss */
+/* line 691, sass/style.scss */
 .contact-form-holder .flxtbl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -791,91 +804,91 @@ body.home .home-h1 h1 {
   flex-wrap: wrap;
   align-items: flex-start;
 }
-/* line 688, sass/style.scss */
+/* line 698, sass/style.scss */
 .contact-form-holder .flxtbl > div {
   padding: 5px;
 }
-/* line 691, sass/style.scss */
+/* line 701, sass/style.scss */
 .contact-form-holder .flxtbl > div > label {
   font-size: 0.8em;
   display: block;
   margin: 0 0 5px 0;
 }
-/* line 698, sass/style.scss */
+/* line 708, sass/style.scss */
 .contact-form-holder .flxtbl > div.name {
   order: 1;
   flex-basis: 50%;
 }
-/* line 702, sass/style.scss */
+/* line 712, sass/style.scss */
 .contact-form-holder .flxtbl > div.phone {
   order: 2;
   flex-basis: 50%;
 }
-/* line 706, sass/style.scss */
+/* line 716, sass/style.scss */
 .contact-form-holder .flxtbl > div.email {
   order: 3;
   flex-basis: 40%;
 }
-/* line 710, sass/style.scss */
+/* line 720, sass/style.scss */
 .contact-form-holder .flxtbl > div.szolgaltatas {
   order: 4;
   flex-basis: 60%;
 }
-/* line 714, sass/style.scss */
+/* line 724, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont {
   order: 5;
   flex-basis: 100%;
   text-align: center;
   padding: 10px 0;
 }
-/* line 719, sass/style.scss */
+/* line 729, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont label {
   font-size: 1.5em;
 }
-/* line 722, sass/style.scss */
+/* line 732, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont .date {
   width: 240px;
   margin: 0 auto;
 }
-/* line 725, sass/style.scss */
+/* line 735, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont .date input {
   font-size: 1.75em;
   text-align: center;
   color: orange;
   padding: 25px 15px;
 }
-/* line 731, sass/style.scss */
+/* line 741, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont .date .input-group-addon {
   background: white !important;
   border: 1px solid #f3e7d2;
   border-left: none;
 }
-/* line 738, sass/style.scss */
+/* line 748, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont .itext {
   font-size: 0.7em;
   margin-top: 5px;
   color: #b17676;
 }
-/* line 744, sass/style.scss */
+/* line 754, sass/style.scss */
 .contact-form-holder .flxtbl > div.uzenet {
   order: 6;
   flex-basis: 100%;
 }
-/* line 747, sass/style.scss */
+/* line 757, sass/style.scss */
 .contact-form-holder .flxtbl > div.uzenet label {
   text-align: center;
 }
-/* line 751, sass/style.scss */
+/* line 761, sass/style.scss */
 .contact-form-holder .flxtbl > div.recaptcha {
   order: 7;
   flex-basis: 100%;
 }
-/* line 755, sass/style.scss */
+/* line 765, sass/style.scss */
 .contact-form-holder .flxtbl > div.btns {
   order: 8;
   flex-basis: 100%;
 }
-/* line 760, sass/style.scss */
+/* line 770, sass/style.scss */
 .contact-form-holder .flxtbl input, .contact-form-holder .flxtbl select, .contact-form-holder .flxtbl textarea {
   border: 1px solid #f3eddc;
   background: white;
@@ -889,16 +902,16 @@ body.home .home-h1 h1 {
   border-radius: 4px;
   box-shadow: 0 2px 5px -2px #cebbb1;
 }
-/* line 773, sass/style.scss */
+/* line 783, sass/style.scss */
 .contact-form-holder .flxtbl input.missing, .contact-form-holder .flxtbl select.missing, .contact-form-holder .flxtbl textarea.missing {
   border: 1px solid #ff5252;
   background: #ff5b5b1c;
 }
-/* line 779, sass/style.scss */
+/* line 789, sass/style.scss */
 .contact-form-holder .flxtbl select {
   width: 100%;
 }
-/* line 783, sass/style.scss */
+/* line 793, sass/style.scss */
 .contact-form-holder .flxtbl textarea {
   width: 100%;
   height: auto;
@@ -908,7 +921,7 @@ body.home .home-h1 h1 {
   line-height: 1.2;
   padding: 10px;
 }
-/* line 793, sass/style.scss */
+/* line 803, sass/style.scss */
 .contact-form-holder .flxtbl button {
   background: #651b1a;
   color: white;
@@ -919,22 +932,22 @@ body.home .home-h1 h1 {
   font-family: 'Din Cond', arial;
   cursor: pointer;
 }
-/* line 802, sass/style.scss */
+/* line 812, sass/style.scss */
 .contact-form-holder .flxtbl button.in-progress {
   background: #ff6060;
 }
-/* line 806, sass/style.scss */
+/* line 816, sass/style.scss */
 .contact-form-holder .flxtbl button.sended {
   background: #88b51b;
 }
-/* line 811, sass/style.scss */
+/* line 821, sass/style.scss */
 .contact-form-holder .flxtbl .accept-text {
   font-size: 0.7em;
   margin: 10px 0 0 0;
   color: #651b1a;
 }
 
-/* line 819, sass/style.scss */
+/* line 829, sass/style.scss */
 .ajandekutalvany {
   font-size: 0.85em;
   line-height: 1.5;
@@ -948,7 +961,7 @@ body.home .home-h1 h1 {
   border-image-width: 8px;
   border-image-slice: 106;
 }
-/* line 832, sass/style.scss */
+/* line 842, sass/style.scss */
 .ajandekutalvany .title {
   font-size: 1.8em;
   font-family: 'Din Cond', arial;
@@ -956,11 +969,11 @@ body.home .home-h1 h1 {
   font-weight: bold;
   margin: 0 0 10px 0;
 }
-/* line 840, sass/style.scss */
+/* line 850, sass/style.scss */
 .ajandekutalvany .redi {
   margin-top: 25px;
 }
-/* line 842, sass/style.scss */
+/* line 852, sass/style.scss */
 .ajandekutalvany .redi a {
   background: #651b1a;
   color: white;
@@ -968,15 +981,444 @@ body.home .home-h1 h1 {
   padding: 10px;
 }
 
-/* line 852, sass/style.scss */
+/* line 862, sass/style.scss */
 .ajandekutalvany-leir p {
-  margin: 5px 0 0 0 !important;
+  margin: 15px 0 0 0 !important;
 }
 
-/* line 857, sass/style.scss */
+/* line 867, sass/style.scss */
 h2.entry-title {
   font-size: 1.8em !important;
   font-family: 'Din Cond', arial !important;
   color: #ffbf00 !important;
   font-weight: bold !important;
+}
+
+/* line 874, sass/style.scss */
+.show-on-mobile {
+  display: none;
+}
+
+/* line 877, sass/style.scss */
+.hide-on-mobile {
+  display: block;
+}
+
+@media screen and (max-width: 1050px) {
+  /* line 882, sass/style.scss */
+  footer.mainfooter .fwrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  /* line 887, sass/style.scss */
+  body.home #main {
+    margin-top: -160px !important;
+  }
+
+  /* line 890, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-menu ul li {
+    padding: 0 10px;
+  }
+
+  /* line 893, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-menu {
+    right: 60px;
+  }
+
+  /* line 896, sass/style.scss */
+  .bloglist-holder {
+    width: 90%;
+  }
+
+  /* line 899, sass/style.scss */
+  .ajandekutalvany {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 904, sass/style.scss */
+  .welcome-text {
+    margin: -80px 0 0 0 !important;
+    padding: 0 25px;
+  }
+
+  /* line 908, sass/style.scss */
+  footer.mainfooter {
+    background-image: none;
+    background-color: #651b1a;
+  }
+
+  /* line 912, sass/style.scss */
+  .fusion-mobile-menu-design-modern .fusion-secondary-header {
+    padding: 25px !important;
+    font-size: 1.15em;
+  }
+
+  /* line 916, sass/style.scss */
+  body.fusion-body .fusion-secondary-header .fusion-alignright .fusion-social-links-header .boxed-icons {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* line 920, sass/style.scss */
+  .fusion-secondary-header .contacts span i {
+    font-size: 16px;
+  }
+
+  /* line 923, sass/style.scss */
+  .fusion-secondary-header .fusion-alignright .opens {
+    line-height: 1.5;
+    margin: 0;
+    font-size: 1.2em;
+  }
+  /* line 928, sass/style.scss */
+  .fusion-secondary-header .fusion-alignright .opens i {
+    font-size: 20px;
+  }
+
+  /* line 932, sass/style.scss */
+  .szolglist-holder .content-holder > article {
+    flex-basis: calc(100%/2);
+  }
+
+  /* line 935, sass/style.scss */
+  #side-header .fusion-logo, .fusion-header {
+    padding: 0px !important;
+  }
+
+  /* line 938, sass/style.scss */
+  #side-header .fusion-logo, .fusion-header .fusion-logo {
+    float: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* line 943, sass/style.scss */
+  .fusion-mobile-nav-holder {
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* line 953, sass/style.scss */
+  .fusion-mobile-menu-icons {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 25%;
+  }
+  /* line 960, sass/style.scss */
+  .fusion-mobile-menu-icons a:before {
+    color: #651b1a;
+    font-size: 40px;
+  }
+
+  /* line 965, sass/style.scss */
+  .szolglist-holder .content-holder > article .title h3 {
+    font-size: 3.3vw;
+  }
+
+  /* line 968, sass/style.scss */
+  .szolglist-holder .content-holder > article .price {
+    font-size: 2.4vw;
+  }
+
+  /* line 971, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-menu {
+    position: relative;
+    right: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* line 977, sass/style.scss */
+  footer.mainfooter {
+    height: auto !important;
+    z-index: 100;
+  }
+
+  /* line 981, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.logo {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 25px 0;
+  }
+  /* line 985, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.logo img {
+    max-width: 50%;
+    width: 50%;
+  }
+
+  /* line 990, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos {
+    flex-basis: 70%;
+    margin: 0 auto;
+  }
+
+  /* line 995, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email,
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone {
+    flex-basis: 50%;
+    font-size: 2.5vw;
+  }
+
+  /* line 999, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.social {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  /* line 1003, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.creator {
+    margin-top: 25px;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  /* line 1008, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos {
+    align-items: flex-start;
+  }
+
+  /* line 1011, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos * {
+    text-align: center;
+  }
+
+  /* line 1014, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.copy {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 2.2vw;
+  }
+
+  /* line 1019, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder .fusion-social-networks .fusion-social-network-icon {
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 30px;
+  }
+
+  /* line 1024, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-menu ul li a {
+    font-size: 2.3vw;
+  }
+
+  /* line 1027, sass/style.scss */
+  body.home h1 {
+    font-size: 8vw !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 1033, sass/style.scss */
+  .show-on-mobile {
+    display: block;
+  }
+
+  /* line 1036, sass/style.scss */
+  .hide-on-mobile {
+    display: none;
+  }
+
+  /* line 1039, sass/style.scss */
+  .content-logo-holder .airtext {
+    top: 15%;
+  }
+
+  /* line 1042, sass/style.scss */
+  .szolgaltatas-page-holder .title {
+    text-align: center;
+  }
+
+  /* line 1045, sass/style.scss */
+  .datepickerbutton-holder a.datepicker-btn {
+    font-size: 5vw;
+    width: 80%;
+  }
+
+  /* line 1049, sass/style.scss */
+  .fusion-mobile-menu-icons {
+    right: 25px;
+  }
+
+  /* line 1053, sass/style.scss */
+  .headdivider-holder .text:before,
+  .headdivider-holder .text:after {
+    width: 30px;
+  }
+
+  /* line 1056, sass/style.scss */
+  .headdivider-holder .text {
+    padding: 0 35px;
+  }
+
+  /* line 1059, sass/style.scss */
+  body.home #main {
+    padding: 0 10px !important;
+  }
+
+  /* line 1062, sass/style.scss */
+  .welcome-text {
+    padding: 0 5px;
+  }
+
+  /* line 1065, sass/style.scss */
+  .fusion-secondary-header .contacts {
+    margin-bottom: 10px;
+  }
+
+  /* line 1068, sass/style.scss */
+  .fusion-secondary-header .contacts span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  /* line 1073, sass/style.scss */
+  .fusion-secondary-header .contacts span.email {
+    display: none;
+  }
+  /* line 1076, sass/style.scss */
+  .fusion-secondary-header .contacts span.phone {
+    font-size: 16px;
+  }
+  /* line 1079, sass/style.scss */
+  .fusion-secondary-header .contacts span.address {
+    display: none;
+  }
+
+  /* line 1083, sass/style.scss */
+  .fusion-secondary-header .fusion-alignright .opens {
+    font-size: 4vw;
+  }
+  /* line 1085, sass/style.scss */
+  .fusion-secondary-header .fusion-alignright .opens i {
+    display: none;
+  }
+
+  /* line 1089, sass/style.scss */
+  .fusion-mobile-menu-design-modern .fusion-secondary-header {
+    padding: 10px !important;
+  }
+
+  /* line 1092, sass/style.scss */
+  .fusion-mobile-menu-design-modern .fusion-social-links-header {
+    margin: 0 0 10px 0;
+  }
+
+  /* line 1095, sass/style.scss */
+  .szolglist-holder .content-holder > article .title h3 {
+    font-size: 4.2vw;
+    line-height: 1;
+    margin-top: 15px !important;
+  }
+
+  /* line 1100, sass/style.scss */
+  .szolglist-holder .content-holder > article .price {
+    font-size: 3.2vw;
+    width: 80%;
+  }
+
+  /* line 1104, sass/style.scss */
+  footer.mainfooter .fwrapper {
+    padding: 0 !important;
+  }
+
+  /* line 1107, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email, footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone {
+    font-size: 3.2vw;
+  }
+
+  /* line 1110, sass/style.scss */
+  .news-holder-content {
+    background-size: 70%;
+  }
+
+  /* line 1113, sass/style.scss */
+  .bloglist-holder .content-holder > article {
+    flex-basis: 100%;
+  }
+
+  /* line 1116, sass/style.scss */
+  .bloglist-holder:before, .bloglist-holder:after {
+    height: 400px;
+  }
+
+  /* line 1119, sass/style.scss */
+  .bloglist-holder .content-holder > article .title {
+    margin: 10px 0 !important;
+  }
+  /* line 1121, sass/style.scss */
+  .bloglist-holder .content-holder > article .title h4 {
+    font-size: 5.5vw !important;
+  }
+
+  /* line 1125, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email, footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone {
+    flex-basis: 100%;
+    font-size: 5vw;
+    margin: 10px 0;
+  }
+
+  /* line 1130, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.copy {
+    font-size: 4vw;
+    margin-top: 40px;
+  }
+
+  /* line 1134, sass/style.scss */
+  footer.mainfooter .fwrapper .footer-content-holder > div.creator {
+    font-size: 3vw;
+  }
+
+  /* line 1137, sass/style.scss */
+  .contact-form-holder {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* line 1141, sass/style.scss */
+  .contact-form-holder .flxtbl > div {
+    flex-basis: 100% !important;
+  }
+
+  /* line 1144, sass/style.scss */
+  .contact-form-holder .flxtbl > div.idopont label {
+    font-size: 4vw;
+    line-height: 1;
+    margin: 10px 0;
+  }
+
+  /* line 1149, sass/style.scss */
+  .contact-form-holder .flxtbl > div.recaptcha iframe {
+    width: 100% !important;
+  }
+
+  /* line 1153, sass/style.scss */
+  .szolgaltatas-page-holder > div.left-cont,
+  .szolgaltatas-page-holder > div.right-cont {
+    flex-basis: 100%;
+  }
+
+  /* line 1156, sass/style.scss */
+  .szolgaltatas-page-holder > div.right-cont {
+    padding: 40px 0 0 0 !important;
+  }
+
+  /* line 1159, sass/style.scss */
+  .news-holder-content {
+    padding: 15px;
+  }
+  /* line 1162, sass/style.scss */
+  .news-holder-content p {
+    padding: 0 10px;
+  }
 }

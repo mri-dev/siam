@@ -627,6 +627,16 @@ body.home .home-h1{
       color: lighten($color-bordo, 10%) !important;
       margin: 0 !important;
     }
+    .pagi {
+      margin: 10px 0 0 0;
+      color: #ccc5ae;
+      .sep {
+        margin: 0 10px;
+      }
+      a{
+        color: #e9b31a;
+      }
+    }
   }
 
   .price {
@@ -859,4 +869,298 @@ h2.entry-title{
   font-family: 'Din Cond', arial !important;
   color: $color-arany-light !important;
   font-weight: bold !important;
+}
+
+.show-on-mobile{
+  display: none;
+}
+.hide-on-mobile{
+  display: block;
+}
+
+@media screen and (max-width: 1050px) {
+  footer.mainfooter .fwrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 25px;
+  }
+  body.home #main {
+    margin-top: -160px !important;
+  }
+  footer.mainfooter .fwrapper .footer-menu ul li{
+    padding: 0 10px;
+  }
+  footer.mainfooter .fwrapper .footer-menu{
+    right: 60px;
+  }
+  .bloglist-holder{
+    width: 90%;
+  }
+  .ajandekutalvany{
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .welcome-text{
+    margin: -80px 0 0 0 !important;
+    padding: 0 25px;
+  }
+  footer.mainfooter{
+    background-image: none;
+    background-color: rgb(101, 27, 26);
+  }
+  .fusion-mobile-menu-design-modern .fusion-secondary-header{
+    padding: 25px !important;
+    font-size: 1.15em;
+  }
+  body.fusion-body .fusion-secondary-header .fusion-alignright .fusion-social-links-header .boxed-icons{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .fusion-secondary-header .contacts span i{
+    font-size: 16px;
+  }
+  .fusion-secondary-header .fusion-alignright .opens{
+    line-height: 1.5;
+    margin: 0;
+    font-size: 1.2em;
+
+    i{
+      font-size: 20px;
+    }
+  }
+  .szolglist-holder .content-holder > article{
+    flex-basis: calc(100%/2);
+  }
+  #side-header .fusion-logo, .fusion-header {
+    padding: 0px !important;
+  }
+  #side-header .fusion-logo, .fusion-header .fusion-logo{
+    float: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .fusion-mobile-nav-holder{
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .fusion-mobile-menu-icons{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    right: 25%;
+    a:before {
+      color: $color-bordo;
+      font-size: 40px;
+    }
+  }
+  .szolglist-holder .content-holder > article .title h3{
+    font-size: 3.3vw;
+  }
+  .szolglist-holder .content-holder > article .price{
+    font-size: 2.4vw;
+  }
+  footer.mainfooter .fwrapper .footer-menu{
+    position: relative;
+    right: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  footer.mainfooter{
+    height: auto !important;
+    z-index: 100;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.logo{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 25px 0;
+    img {
+      max-width: 50%;
+      width: 50%;
+    }
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos{
+    flex-basis: 70%;
+    margin: 0 auto;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email,
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone{
+    flex-basis: 50%;
+    font-size: 2.5vw;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.social{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.creator{
+    margin-top: 25px;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos{
+    align-items: flex-start;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos *{
+    text-align: center;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.copy{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 2.2vw;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder .fusion-social-networks .fusion-social-network-icon{
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 30px;
+  }
+  footer.mainfooter .fwrapper .footer-menu ul li a{
+    font-size: 2.3vw;
+  }
+  body.home h1{
+    font-size: 8vw !important;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .show-on-mobile{
+    display: block;
+  }
+  .hide-on-mobile{
+    display: none;
+  }
+  .content-logo-holder .airtext{
+    top: 15%;
+  }
+  .szolgaltatas-page-holder .title{
+    text-align: center;
+  }
+  .datepickerbutton-holder a.datepicker-btn{
+    font-size: 5vw;
+    width: 80%;
+  }
+  .fusion-mobile-menu-icons{
+    right: 25px;
+  }
+  .headdivider-holder .text:before,
+  .headdivider-holder .text:after{
+    width: 30px;
+  }
+  .headdivider-holder .text{
+    padding: 0 35px;
+  }
+  body.home #main{
+    padding: 0 10px !important;
+  }
+  .welcome-text{
+    padding: 0 5px;
+  }
+  .fusion-secondary-header .contacts{
+    margin-bottom: 10px;
+  }
+  .fusion-secondary-header .contacts span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    &.email{
+      display: none;
+    }
+    &.phone {
+      font-size: 16px;
+    }
+    &.address {
+      display: none;
+    }
+  }
+  .fusion-secondary-header .fusion-alignright .opens{
+    font-size: 4vw;
+    i{
+      display: none;
+    }
+  }
+  .fusion-mobile-menu-design-modern .fusion-secondary-header{
+    padding:10px !important;
+  }
+  .fusion-mobile-menu-design-modern .fusion-social-links-header{
+    margin: 0 0 10px 0;
+  }
+  .szolglist-holder .content-holder > article .title h3 {
+    font-size: 4.2vw;
+    line-height: 1;
+    margin-top: 15px !important;
+  }
+  .szolglist-holder .content-holder > article .price{
+    font-size: 3.2vw;
+    width: 80%;
+  }
+  footer.mainfooter .fwrapper{
+    padding: 0 !important;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email, footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone{
+    font-size: 3.2vw;
+  }
+  .news-holder-content{
+    background-size: 70%;
+  }
+  .bloglist-holder .content-holder > article{
+    flex-basis: 100%;
+  }
+  .bloglist-holder:before, .bloglist-holder:after{
+    height: 400px;
+  }
+  .bloglist-holder .content-holder > article .title{
+    margin: 10px 0 !important;
+    h4 {
+      font-size: 5.5vw !important;
+    }
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email, footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone{
+    flex-basis: 100%;
+    font-size: 5vw;
+    margin: 10px 0;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.copy{
+    font-size: 4vw;
+    margin-top: 40px;
+  }
+  footer.mainfooter .fwrapper .footer-content-holder > div.creator{
+    font-size: 3vw;
+  }
+  .contact-form-holder{
+    width: 100%;
+    padding: 10px;
+  }
+  .contact-form-holder .flxtbl > div{
+    flex-basis: 100% !important;
+  }
+  .contact-form-holder .flxtbl > div.idopont label {
+      font-size: 4vw;
+      line-height: 1;
+      margin: 10px 0;
+  }
+  .contact-form-holder .flxtbl > div.recaptcha iframe{
+    width: 100% !important;
+  }
+  .szolgaltatas-page-holder > div.left-cont,
+  .szolgaltatas-page-holder > div.right-cont{
+    flex-basis: 100%;
+  }
+  .szolgaltatas-page-holder > div.right-cont{
+    padding: 40px 0 0 0 !important;
+  }
+  .news-holder-content{
+    padding: 15px;
+
+    p{
+      padding: 0 10px;
+    }
+  }
 }

@@ -19,6 +19,12 @@ $price = get_post_meta($post->ID, 'price', true);
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="szolgaltatas-page-holder">
   	  <div class="left-cont">
+				<div class="title show-on-mobile">
+          <h1><?php echo the_title(); ?></h1>
+					<div class="pagi">
+						<a href="/"><i class="fa fa-home"></i></a> <span class="sep">/</span> <a href="/szolgaltatasok">Szolgáltatások</a>
+					</div>
+        </div>
         <div class="img">
           <img src="<?=$img?>" alt="<?php echo the_title(); ?>">
         </div>
@@ -33,8 +39,11 @@ $price = get_post_meta($post->ID, 'price', true);
         </div>
   	  </div>
       <div class="right-cont">
-        <div class="title">
+        <div class="title hide-on-mobile">
           <h1><?php echo the_title(); ?></h1>
+					<div class="pagi">
+						<a href="/"><i class="fa fa-home"></i></a> <span class="sep">/</span> <a href="/szolgaltatasok">Szolgáltatások</a>
+					</div>
         </div>
         <div class="content">
           <?php the_content(); ?>
