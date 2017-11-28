@@ -132,12 +132,17 @@ main#main {
   overflow: hidden;
 }
 
-/* line 72, sass/style.scss */
+/* line 74, sass/style.scss */
+body.post-template-default #main {
+  padding: 40px 0 80px 0;
+}
+
+/* line 78, sass/style.scss */
 #sliders-container {
   position: relative;
 }
 
-/* line 75, sass/style.scss */
+/* line 81, sass/style.scss */
 #sliders-container:after {
   content: "";
   position: absolute;
@@ -149,23 +154,23 @@ main#main {
   background-size: cover;
 }
 
-/* line 86, sass/style.scss */
+/* line 92, sass/style.scss */
 .rev_slider_wrapper .shadow-left,
 .rev_slider_wrapper .shadow-right {
   display: none;
 }
 
-/* line 89, sass/style.scss */
+/* line 95, sass/style.scss */
 .avada-skin-rev {
   border: none !important;
 }
 
-/* line 93, sass/style.scss */
+/* line 99, sass/style.scss */
 .din-text {
   font-family: 'Din Cond', sans-serif;
 }
 
-/* line 97, sass/style.scss */
+/* line 103, sass/style.scss */
 footer.mainfooter {
   background-image: url("../../images/footer_design.svg");
   background-repeat: no-repeat;
@@ -176,7 +181,7 @@ footer.mainfooter {
   position: relative;
   z-index: 1;
 }
-/* line 107, sass/style.scss */
+/* line 113, sass/style.scss */
 footer.mainfooter .fwrapper {
   width: 1050px;
   max-width: 1050px;
@@ -185,27 +190,27 @@ footer.mainfooter .fwrapper {
   position: relative;
   font-size: 0.84em;
 }
-/* line 115, sass/style.scss */
+/* line 121, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu {
   position: absolute;
   right: 0;
   top: 45px;
   z-index: 10;
 }
-/* line 121, sass/style.scss */
+/* line 127, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu ul, footer.mainfooter .fwrapper .footer-menu li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 128, sass/style.scss */
+/* line 134, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu ul li {
   display: inline-block;
   *display: inline;
   zoom: 1;
   padding: 0 15px;
 }
-/* line 134, sass/style.scss */
+/* line 140, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu ul li a {
   text-transform: uppercase;
   display: block;
@@ -216,11 +221,11 @@ footer.mainfooter .fwrapper .footer-menu ul li a {
   border-bottom-width: 3px;
   border-bottom-color: transparent;
 }
-/* line 146, sass/style.scss */
+/* line 152, sass/style.scss */
 footer.mainfooter .fwrapper .footer-menu ul li.current a {
   border-bottom-color: white;
 }
-/* line 154, sass/style.scss */
+/* line 160, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,7 +236,7 @@ footer.mainfooter .fwrapper .footer-content-holder {
   position: relative;
   padding: 20px 0;
 }
-/* line 164, sass/style.scss */
+/* line 170, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder .fusion-social-networks .fusion-social-network-icon {
   background: #a67c00;
   border-radius: 15px;
@@ -239,20 +244,20 @@ footer.mainfooter .fwrapper .footer-content-holder .fusion-social-networks .fusi
   padding: 6px;
   width: auto;
 }
-/* line 172, sass/style.scss */
+/* line 178, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder a, footer.mainfooter .fwrapper .footer-content-holder a:visited {
   color: white;
 }
-/* line 176, sass/style.scss */
+/* line 182, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.logo {
   flex-basis: 25%;
   padding-right: 25px;
 }
-/* line 180, sass/style.scss */
+/* line 186, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos {
   flex-basis: calc(75%/2);
 }
-/* line 182, sass/style.scss */
+/* line 188, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,17 +266,17 @@ footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos {
   align-items: flex-end;
   justify-content: space-between;
 }
-/* line 189, sass/style.scss */
+/* line 195, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div {
   line-height: 28px;
 }
-/* line 192, sass/style.scss */
+/* line 198, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email {
   flex-basis: 100%;
   margin-bottom: 10px;
   font-size: 1.2em;
 }
-/* line 199, sass/style.scss */
+/* line 205, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.creator {
   flex-basis: calc(75%/2);
   display: -webkit-box;
@@ -282,30 +287,30 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator {
   justify-content: flex-end;
   padding-bottom: 3px;
 }
-/* line 209, sass/style.scss */
+/* line 215, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.creator img.ref {
   height: 28px;
   position: relative;
   margin-top: -11px;
 }
-/* line 215, sass/style.scss */
+/* line 221, sass/style.scss */
 footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   padding: 0 5px;
 }
 
-/* line 223, sass/style.scss */
+/* line 229, sass/style.scss */
 .des-bg {
   background-image: url("../../images/bgoverlay.svg");
   background-repeat: no-repeat !important;
   background-position: center top !important;
   background-size: cover !important;
 }
-/* line 229, sass/style.scss */
+/* line 235, sass/style.scss */
 .des-bg.des-bg-topstart {
   background-position: center top 110px !important;
 }
 
-/* line 234, sass/style.scss */
+/* line 240, sass/style.scss */
 .content-logo-holder {
   background-image: url("../../images/logo-content-backdes.svg");
   background-position: center;
@@ -315,7 +320,7 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   margin: 10px auto;
   position: relative;
 }
-/* line 243, sass/style.scss */
+/* line 249, sass/style.scss */
 .content-logo-holder .airtext {
   position: absolute;
   font-size: 1.4em;
@@ -325,7 +330,7 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
-/* line 253, sass/style.scss */
+/* line 259, sass/style.scss */
 .content-logo-holder img {
   position: absolute;
   top: 50%;
@@ -335,14 +340,14 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   height: 48%;
 }
 
-/* line 263, sass/style.scss */
+/* line 269, sass/style.scss */
 .welcome-text {
   margin: -99px 15% 0 15% !important;
   line-height: 1.4;
   font-size: 1.2em;
 }
 
-/* line 268, sass/style.scss */
+/* line 274, sass/style.scss */
 .headdivider-holder {
   position: relative;
   text-align: center;
@@ -352,18 +357,18 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   display: flex;
   align-items: center;
 }
-/* line 277, sass/style.scss */
+/* line 283, sass/style.scss */
 .headdivider-holder .backline {
   flex: 1;
   height: 1px;
   background-color: #a67c00;
 }
-/* line 283, sass/style.scss */
+/* line 289, sass/style.scss */
 .headdivider-holder .text {
   padding: 0 110px;
   position: relative;
 }
-/* line 287, sass/style.scss */
+/* line 293, sass/style.scss */
 .headdivider-holder .text:before {
   content: "";
   left: 0;
@@ -376,7 +381,7 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   width: 100px;
   background-size: contain;
 }
-/* line 299, sass/style.scss */
+/* line 305, sass/style.scss */
 .headdivider-holder .text:after {
   content: "";
   right: 0;
@@ -389,7 +394,7 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   width: 100px;
   background-size: contain;
 }
-/* line 314, sass/style.scss */
+/* line 320, sass/style.scss */
 .headdivider-holder h2 {
   font-family: 'handwrite', sans-serif !important;
   font-size: 2.2em !important;
@@ -398,17 +403,17 @@ footer.mainfooter .fwrapper .footer-content-holder > div.creator > div {
   margin: 0 !important;
 }
 
-/* line 323, sass/style.scss */
+/* line 329, sass/style.scss */
 body.home .home-h1 h1 {
   margin: 0 !important;
 }
 
-/* line 327, sass/style.scss */
+/* line 333, sass/style.scss */
 .datepickerbutton-holder {
   text-align: center;
   position: relative;
 }
-/* line 331, sass/style.scss */
+/* line 337, sass/style.scss */
 .datepickerbutton-holder a.datepicker-btn {
   position: absolute;
   left: 50%;
@@ -417,7 +422,7 @@ body.home .home-h1 h1 {
   z-index: 10;
 }
 
-/* line 339, sass/style.scss */
+/* line 345, sass/style.scss */
 .datepicker-btn {
   font-family: 'Din Comp', arial;
   font-size: 1.9em;
@@ -439,47 +444,47 @@ body.home .home-h1 h1 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a67c00', endColorstr='#ffdc73',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 355, sass/style.scss */
+/* line 361, sass/style.scss */
 .datepicker-btn:hover {
   color: white;
 }
 
-/* line 359, sass/style.scss */
+/* line 365, sass/style.scss */
 .news-header {
   height: 420px;
 }
 
-/* line 363, sass/style.scss */
+/* line 369, sass/style.scss */
 .fusion-secondary-header {
   color: white !important;
 }
-/* line 365, sass/style.scss */
+/* line 371, sass/style.scss */
 .fusion-secondary-header a {
   color: white !important;
 }
-/* line 370, sass/style.scss */
+/* line 376, sass/style.scss */
 .fusion-secondary-header .contacts span {
   margin-right: 15px;
   vertical-align: middle;
 }
-/* line 374, sass/style.scss */
+/* line 380, sass/style.scss */
 .fusion-secondary-header .contacts span i {
   margin-right: 5px;
   font-size: 14px;
 }
-/* line 382, sass/style.scss */
+/* line 388, sass/style.scss */
 .fusion-secondary-header .fusion-alignright .opens {
   float: right;
   line-height: 46px;
   margin-right: 15px;
 }
-/* line 387, sass/style.scss */
+/* line 393, sass/style.scss */
 .fusion-secondary-header .fusion-alignright .opens i {
   margin-right: 5px;
   font-size: 14px;
 }
 
-/* line 395, sass/style.scss */
+/* line 401, sass/style.scss */
 .news-holder-content {
   font-size: 1.2em;
   margin-top: -420px !important;
@@ -492,24 +497,24 @@ body.home .home-h1 h1 {
   background-position: top center;
   background-size: 28%;
 }
-/* line 407, sass/style.scss */
+/* line 413, sass/style.scss */
 .news-holder-content p {
   margin: 5px 0 !important;
 }
-/* line 411, sass/style.scss */
+/* line 417, sass/style.scss */
 .news-holder-content h1 {
   margin: 0 0 15px 0 !important;
   color: white !important;
 }
 
-/* line 417, sass/style.scss */
+/* line 423, sass/style.scss */
 .bloglist-holder {
   background: white;
   margin: 50px auto;
   padding: 20px;
   position: relative;
 }
-/* line 423, sass/style.scss */
+/* line 429, sass/style.scss */
 .bloglist-holder .content-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,19 +524,19 @@ body.home .home-h1 h1 {
   color: #262626;
   font-size: 0.84em;
 }
-/* line 432, sass/style.scss */
+/* line 438, sass/style.scss */
 .bloglist-holder .content-holder > article {
   padding: 20px;
   text-align: center;
   flex-basis: calc(100% / 3);
 }
-/* line 437, sass/style.scss */
+/* line 443, sass/style.scss */
 .bloglist-holder .content-holder > article .image {
   position: relative;
   overflow: hidden;
   height: 290px;
 }
-/* line 442, sass/style.scss */
+/* line 448, sass/style.scss */
 .bloglist-holder .content-holder > article .image img {
   height: 100%;
   width: auto;
@@ -542,13 +547,13 @@ body.home .home-h1 h1 {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 454, sass/style.scss */
+/* line 460, sass/style.scss */
 .bloglist-holder .content-holder > article .image.portrait img {
   height: auto;
   width: 100%;
   max-width: 100%;
 }
-/* line 462, sass/style.scss */
+/* line 468, sass/style.scss */
 .bloglist-holder .content-holder > article .date {
   pointer-events: none;
   position: relative;
@@ -561,37 +566,37 @@ body.home .home-h1 h1 {
   width: 70%;
   margin: -15px auto 0 auto;
 }
-/* line 475, sass/style.scss */
+/* line 481, sass/style.scss */
 .bloglist-holder .content-holder > article .title {
   margin: 10px 0 5px 0;
 }
-/* line 477, sass/style.scss */
+/* line 483, sass/style.scss */
 .bloglist-holder .content-holder > article .title h4 {
   font-family: 'Din Cond', arial;
   font-size: 1.1em;
   font-weight: bold;
   margin: 0;
 }
-/* line 482, sass/style.scss */
+/* line 488, sass/style.scss */
 .bloglist-holder .content-holder > article .title h4 a {
   display: block;
   color: black;
 }
-/* line 488, sass/style.scss */
+/* line 494, sass/style.scss */
 .bloglist-holder .content-holder > article .excerpt {
   font-family: Arial;
   font-size: 0.9em;
   line-height: 1.4;
 }
-/* line 493, sass/style.scss */
+/* line 499, sass/style.scss */
 .bloglist-holder .content-holder > article .link {
   margin-top: 10px;
 }
-/* line 496, sass/style.scss */
+/* line 502, sass/style.scss */
 .bloglist-holder .content-holder > article .link a {
   font-size: 1.2em;
 }
-/* line 504, sass/style.scss */
+/* line 510, sass/style.scss */
 .bloglist-holder:before, .bloglist-holder:after {
   content: "";
   position: absolute;
@@ -603,18 +608,18 @@ body.home .home-h1 h1 {
   background-size: contain;
   pointer-events: none;
 }
-/* line 515, sass/style.scss */
+/* line 521, sass/style.scss */
 .bloglist-holder:before {
   left: -100px;
   background-image: url("../../images/vert_des_ele_left.svg");
 }
-/* line 519, sass/style.scss */
+/* line 525, sass/style.scss */
 .bloglist-holder:after {
   right: -100px;
   background-image: url("../../images/vert_des_ele_right.svg");
 }
 
-/* line 525, sass/style.scss */
+/* line 531, sass/style.scss */
 .szolglist-holder .content-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,13 +627,13 @@ body.home .home-h1 h1 {
   flex-wrap: wrap;
   align-items: flex-start;
 }
-/* line 531, sass/style.scss */
+/* line 537, sass/style.scss */
 .szolglist-holder .content-holder > article {
   flex-basis: calc(100%/4);
   padding: 10px;
   text-align: center;
 }
-/* line 536, sass/style.scss */
+/* line 542, sass/style.scss */
 .szolglist-holder .content-holder > article .img {
   width: 90%;
   margin: 0 auto;
@@ -639,25 +644,25 @@ body.home .home-h1 h1 {
   -webkit-transition: all .4s;
   transition: all .4s;
 }
-/* line 548, sass/style.scss */
+/* line 554, sass/style.scss */
 .szolglist-holder .content-holder > article:hover .img {
   border: 10px solid #651b1a;
 }
-/* line 553, sass/style.scss */
+/* line 559, sass/style.scss */
 .szolglist-holder .content-holder > article .title {
   margin: 15px 0 10px 0;
 }
-/* line 555, sass/style.scss */
+/* line 561, sass/style.scss */
 .szolglist-holder .content-holder > article .title h3 {
   font-family: 'Din Cond', arial;
   font-size: 1.4em;
   margin: 0 !important;
 }
-/* line 560, sass/style.scss */
+/* line 566, sass/style.scss */
 .szolglist-holder .content-holder > article .title h3 a {
   color: #1d1c18;
 }
-/* line 566, sass/style.scss */
+/* line 572, sass/style.scss */
 .szolglist-holder .content-holder > article .price {
   width: 60%;
   text-align: center;
@@ -668,16 +673,16 @@ body.home .home-h1 h1 {
   line-height: 1;
 }
 
-/* line 578, sass/style.scss */
+/* line 584, sass/style.scss */
 .szalag-foglalas {
   color: white;
   font-size: 1.3em;
 }
-/* line 581, sass/style.scss */
+/* line 587, sass/style.scss */
 .szalag-foglalas p {
   margin: 0;
 }
-/* line 584, sass/style.scss */
+/* line 590, sass/style.scss */
 .szalag-foglalas a {
   font-size: 0.8em;
   background-color: #2d2c40;
@@ -686,24 +691,24 @@ body.home .home-h1 h1 {
   padding: 12px;
 }
 
-/* line 593, sass/style.scss */
+/* line 599, sass/style.scss */
 .single .fusion-sharing-box {
   margin-bottom: 0;
   margin-top: 20px;
   padding: 15px !important;
   height: auto;
 }
-/* line 598, sass/style.scss */
+/* line 604, sass/style.scss */
 .single .fusion-sharing-box h4 {
   padding: 0 !important;
 }
 
-/* line 602, sass/style.scss */
+/* line 608, sass/style.scss */
 .fusion-social-networks.boxed-icons .fusion-social-network-icon {
   margin: 0 5px;
 }
 
-/* line 606, sass/style.scss */
+/* line 612, sass/style.scss */
 .szolgaltatas-page-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,59 +717,59 @@ body.home .home-h1 h1 {
   align-items: flex-start;
   padding: 0 0 40px 0;
 }
-/* line 614, sass/style.scss */
+/* line 620, sass/style.scss */
 .szolgaltatas-page-holder > div.left-cont {
   flex-basis: 30%;
 }
-/* line 617, sass/style.scss */
+/* line 623, sass/style.scss */
 .szolgaltatas-page-holder > div.right-cont {
   flex-basis: 70%;
   padding-left: 30px;
 }
-/* line 622, sass/style.scss */
+/* line 628, sass/style.scss */
 .szolgaltatas-page-holder .title {
   margin-bottom: 20px;
 }
-/* line 624, sass/style.scss */
+/* line 630, sass/style.scss */
 .szolgaltatas-page-holder .title h1 {
   font-size: 2.8em !important;
   font-family: 'Din Comp', arial !important;
   color: #8e2624 !important;
   margin: 0 !important;
 }
-/* line 630, sass/style.scss */
+/* line 636, sass/style.scss */
 .szolgaltatas-page-holder .title .pagi {
   margin: 10px 0 0 0;
   color: #ccc5ae;
 }
-/* line 633, sass/style.scss */
+/* line 639, sass/style.scss */
 .szolgaltatas-page-holder .title .pagi .sep {
   margin: 0 10px;
 }
-/* line 636, sass/style.scss */
+/* line 642, sass/style.scss */
 .szolgaltatas-page-holder .title .pagi a {
   color: #e9b31a;
 }
-/* line 642, sass/style.scss */
+/* line 648, sass/style.scss */
 .szolgaltatas-page-holder .price {
   text-align: center;
   color: #222222;
   margin: 0 auto;
   line-height: 1.4;
 }
-/* line 648, sass/style.scss */
+/* line 654, sass/style.scss */
 .szolgaltatas-page-holder .price .t {
   font-size: 1.5em;
   color: #8e2624;
   font-weight: bold;
   font-family: 'Din Cond', arial;
 }
-/* line 656, sass/style.scss */
+/* line 662, sass/style.scss */
 .szolgaltatas-page-holder .foglalas {
   text-align: center;
   margin-top: 25px;
 }
-/* line 659, sass/style.scss */
+/* line 665, sass/style.scss */
 .szolgaltatas-page-holder .foglalas a {
   background: #ffbf00;
   border: 3px solid #efe3c0;
@@ -774,7 +779,7 @@ body.home .home-h1 h1 {
   padding: 10px;
   margin: 10px auto;
 }
-/* line 670, sass/style.scss */
+/* line 676, sass/style.scss */
 .szolgaltatas-page-holder .img {
   width: 90%;
   margin: 0 auto;
@@ -787,7 +792,7 @@ body.home .home-h1 h1 {
   margin-bottom: 20px;
 }
 
-/* line 683, sass/style.scss */
+/* line 689, sass/style.scss */
 .contact-form-holder {
   background: rgba(255, 255, 255, 0.9);
   padding: 25px;
@@ -796,7 +801,7 @@ body.home .home-h1 h1 {
   margin: 0 auto;
   border: 5px solid #902524;
 }
-/* line 691, sass/style.scss */
+/* line 697, sass/style.scss */
 .contact-form-holder .flxtbl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -804,91 +809,91 @@ body.home .home-h1 h1 {
   flex-wrap: wrap;
   align-items: flex-start;
 }
-/* line 698, sass/style.scss */
+/* line 704, sass/style.scss */
 .contact-form-holder .flxtbl > div {
   padding: 5px;
 }
-/* line 701, sass/style.scss */
+/* line 707, sass/style.scss */
 .contact-form-holder .flxtbl > div > label {
   font-size: 0.8em;
   display: block;
   margin: 0 0 5px 0;
 }
-/* line 708, sass/style.scss */
+/* line 714, sass/style.scss */
 .contact-form-holder .flxtbl > div.name {
   order: 1;
   flex-basis: 50%;
 }
-/* line 712, sass/style.scss */
+/* line 718, sass/style.scss */
 .contact-form-holder .flxtbl > div.phone {
   order: 2;
   flex-basis: 50%;
 }
-/* line 716, sass/style.scss */
+/* line 722, sass/style.scss */
 .contact-form-holder .flxtbl > div.email {
   order: 3;
   flex-basis: 40%;
 }
-/* line 720, sass/style.scss */
+/* line 726, sass/style.scss */
 .contact-form-holder .flxtbl > div.szolgaltatas {
   order: 4;
   flex-basis: 60%;
 }
-/* line 724, sass/style.scss */
+/* line 730, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont {
   order: 5;
   flex-basis: 100%;
   text-align: center;
   padding: 10px 0;
 }
-/* line 729, sass/style.scss */
+/* line 735, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont label {
   font-size: 1.5em;
 }
-/* line 732, sass/style.scss */
+/* line 738, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont .date {
   width: 240px;
   margin: 0 auto;
 }
-/* line 735, sass/style.scss */
+/* line 741, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont .date input {
   font-size: 1.75em;
   text-align: center;
   color: orange;
   padding: 25px 15px;
 }
-/* line 741, sass/style.scss */
+/* line 747, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont .date .input-group-addon {
   background: white !important;
   border: 1px solid #f3e7d2;
   border-left: none;
 }
-/* line 748, sass/style.scss */
+/* line 754, sass/style.scss */
 .contact-form-holder .flxtbl > div.idopont .itext {
   font-size: 0.7em;
   margin-top: 5px;
   color: #b17676;
 }
-/* line 754, sass/style.scss */
+/* line 760, sass/style.scss */
 .contact-form-holder .flxtbl > div.uzenet {
   order: 6;
   flex-basis: 100%;
 }
-/* line 757, sass/style.scss */
+/* line 763, sass/style.scss */
 .contact-form-holder .flxtbl > div.uzenet label {
   text-align: center;
 }
-/* line 761, sass/style.scss */
+/* line 767, sass/style.scss */
 .contact-form-holder .flxtbl > div.recaptcha {
   order: 7;
   flex-basis: 100%;
 }
-/* line 765, sass/style.scss */
+/* line 771, sass/style.scss */
 .contact-form-holder .flxtbl > div.btns {
   order: 8;
   flex-basis: 100%;
 }
-/* line 770, sass/style.scss */
+/* line 776, sass/style.scss */
 .contact-form-holder .flxtbl input, .contact-form-holder .flxtbl select, .contact-form-holder .flxtbl textarea {
   border: 1px solid #f3eddc;
   background: white;
@@ -902,16 +907,16 @@ body.home .home-h1 h1 {
   border-radius: 4px;
   box-shadow: 0 2px 5px -2px #cebbb1;
 }
-/* line 783, sass/style.scss */
+/* line 789, sass/style.scss */
 .contact-form-holder .flxtbl input.missing, .contact-form-holder .flxtbl select.missing, .contact-form-holder .flxtbl textarea.missing {
   border: 1px solid #ff5252;
   background: #ff5b5b1c;
 }
-/* line 789, sass/style.scss */
+/* line 795, sass/style.scss */
 .contact-form-holder .flxtbl select {
   width: 100%;
 }
-/* line 793, sass/style.scss */
+/* line 799, sass/style.scss */
 .contact-form-holder .flxtbl textarea {
   width: 100%;
   height: auto;
@@ -921,7 +926,7 @@ body.home .home-h1 h1 {
   line-height: 1.2;
   padding: 10px;
 }
-/* line 803, sass/style.scss */
+/* line 809, sass/style.scss */
 .contact-form-holder .flxtbl button {
   background: #651b1a;
   color: white;
@@ -932,22 +937,22 @@ body.home .home-h1 h1 {
   font-family: 'Din Cond', arial;
   cursor: pointer;
 }
-/* line 812, sass/style.scss */
+/* line 818, sass/style.scss */
 .contact-form-holder .flxtbl button.in-progress {
   background: #ff6060;
 }
-/* line 816, sass/style.scss */
+/* line 822, sass/style.scss */
 .contact-form-holder .flxtbl button.sended {
   background: #88b51b;
 }
-/* line 821, sass/style.scss */
+/* line 827, sass/style.scss */
 .contact-form-holder .flxtbl .accept-text {
   font-size: 0.7em;
   margin: 10px 0 0 0;
   color: #651b1a;
 }
 
-/* line 829, sass/style.scss */
+/* line 835, sass/style.scss */
 .ajandekutalvany {
   font-size: 0.85em;
   line-height: 1.5;
@@ -961,7 +966,7 @@ body.home .home-h1 h1 {
   border-image-width: 8px;
   border-image-slice: 106;
 }
-/* line 842, sass/style.scss */
+/* line 848, sass/style.scss */
 .ajandekutalvany .title {
   font-size: 1.8em;
   font-family: 'Din Cond', arial;
@@ -969,11 +974,11 @@ body.home .home-h1 h1 {
   font-weight: bold;
   margin: 0 0 10px 0;
 }
-/* line 850, sass/style.scss */
+/* line 856, sass/style.scss */
 .ajandekutalvany .redi {
   margin-top: 25px;
 }
-/* line 852, sass/style.scss */
+/* line 858, sass/style.scss */
 .ajandekutalvany .redi a {
   background: #651b1a;
   color: white;
@@ -981,12 +986,12 @@ body.home .home-h1 h1 {
   padding: 10px;
 }
 
-/* line 862, sass/style.scss */
+/* line 868, sass/style.scss */
 .ajandekutalvany-leir p {
   margin: 15px 0 0 0 !important;
 }
 
-/* line 867, sass/style.scss */
+/* line 873, sass/style.scss */
 h2.entry-title {
   font-size: 1.8em !important;
   font-family: 'Din Cond', arial !important;
@@ -994,108 +999,108 @@ h2.entry-title {
   font-weight: bold !important;
 }
 
-/* line 874, sass/style.scss */
+/* line 880, sass/style.scss */
 .show-on-mobile {
   display: none;
 }
 
-/* line 877, sass/style.scss */
+/* line 883, sass/style.scss */
 .hide-on-mobile {
   display: block;
 }
 
 @media screen and (max-width: 1050px) {
-  /* line 882, sass/style.scss */
+  /* line 888, sass/style.scss */
   footer.mainfooter .fwrapper {
     width: 100%;
     max-width: 100%;
     padding: 0 25px;
   }
 
-  /* line 887, sass/style.scss */
+  /* line 893, sass/style.scss */
   body.home #main {
     margin-top: -160px !important;
   }
 
-  /* line 890, sass/style.scss */
+  /* line 896, sass/style.scss */
   footer.mainfooter .fwrapper .footer-menu ul li {
     padding: 0 10px;
   }
 
-  /* line 893, sass/style.scss */
+  /* line 899, sass/style.scss */
   footer.mainfooter .fwrapper .footer-menu {
     right: 60px;
   }
 
-  /* line 896, sass/style.scss */
+  /* line 902, sass/style.scss */
   .bloglist-holder {
     width: 90%;
   }
 
-  /* line 899, sass/style.scss */
+  /* line 905, sass/style.scss */
   .ajandekutalvany {
     padding: 10px;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 904, sass/style.scss */
+  /* line 910, sass/style.scss */
   .welcome-text {
     margin: -80px 0 0 0 !important;
     padding: 0 25px;
   }
 
-  /* line 908, sass/style.scss */
+  /* line 914, sass/style.scss */
   footer.mainfooter {
     background-image: none;
     background-color: #651b1a;
   }
 
-  /* line 912, sass/style.scss */
+  /* line 918, sass/style.scss */
   .fusion-mobile-menu-design-modern .fusion-secondary-header {
     padding: 25px !important;
     font-size: 1.15em;
   }
 
-  /* line 916, sass/style.scss */
+  /* line 922, sass/style.scss */
   body.fusion-body .fusion-secondary-header .fusion-alignright .fusion-social-links-header .boxed-icons {
     margin: 0 !important;
     padding: 0 !important;
   }
 
-  /* line 920, sass/style.scss */
+  /* line 926, sass/style.scss */
   .fusion-secondary-header .contacts span i {
     font-size: 16px;
   }
 
-  /* line 923, sass/style.scss */
+  /* line 929, sass/style.scss */
   .fusion-secondary-header .fusion-alignright .opens {
     line-height: 1.5;
     margin: 0;
     font-size: 1.2em;
   }
-  /* line 928, sass/style.scss */
+  /* line 934, sass/style.scss */
   .fusion-secondary-header .fusion-alignright .opens i {
     font-size: 20px;
   }
 
-  /* line 932, sass/style.scss */
+  /* line 938, sass/style.scss */
   .szolglist-holder .content-holder > article {
     flex-basis: calc(100%/2);
   }
 
-  /* line 935, sass/style.scss */
+  /* line 941, sass/style.scss */
   #side-header .fusion-logo, .fusion-header {
     padding: 0px !important;
   }
 
-  /* line 938, sass/style.scss */
+  /* line 944, sass/style.scss */
   #side-header .fusion-logo, .fusion-header .fusion-logo {
     float: none;
     text-align: center;
     padding: 10px 0;
   }
 
-  /* line 943, sass/style.scss */
+  /* line 949, sass/style.scss */
   .fusion-mobile-nav-holder {
     left: 0;
     right: 0;
@@ -1107,7 +1112,7 @@ h2.entry-title {
     padding: 0 !important;
   }
 
-  /* line 953, sass/style.scss */
+  /* line 959, sass/style.scss */
   .fusion-mobile-menu-icons {
     position: absolute;
     top: 50%;
@@ -1115,23 +1120,23 @@ h2.entry-title {
     transform: translateY(-50%);
     right: 25%;
   }
-  /* line 960, sass/style.scss */
+  /* line 966, sass/style.scss */
   .fusion-mobile-menu-icons a:before {
     color: #651b1a;
     font-size: 40px;
   }
 
-  /* line 965, sass/style.scss */
+  /* line 971, sass/style.scss */
   .szolglist-holder .content-holder > article .title h3 {
     font-size: 3.3vw;
   }
 
-  /* line 968, sass/style.scss */
+  /* line 974, sass/style.scss */
   .szolglist-holder .content-holder > article .price {
     font-size: 2.4vw;
   }
 
-  /* line 971, sass/style.scss */
+  /* line 977, sass/style.scss */
   footer.mainfooter .fwrapper .footer-menu {
     position: relative;
     right: auto;
@@ -1139,286 +1144,286 @@ h2.entry-title {
     margin-bottom: 10px;
   }
 
-  /* line 977, sass/style.scss */
+  /* line 983, sass/style.scss */
   footer.mainfooter {
     height: auto !important;
     z-index: 100;
   }
 
-  /* line 981, sass/style.scss */
+  /* line 987, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.logo {
     flex-basis: 100%;
     text-align: center;
     padding: 25px 0;
   }
-  /* line 985, sass/style.scss */
+  /* line 991, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.logo img {
     max-width: 50%;
     width: 50%;
   }
 
-  /* line 990, sass/style.scss */
+  /* line 996, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos {
     flex-basis: 70%;
     margin: 0 auto;
   }
 
-  /* line 995, sass/style.scss */
+  /* line 1001, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email,
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone {
     flex-basis: 50%;
     font-size: 2.5vw;
   }
 
-  /* line 999, sass/style.scss */
+  /* line 1005, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.social {
     flex-basis: 100%;
     text-align: center;
   }
 
-  /* line 1003, sass/style.scss */
+  /* line 1009, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.creator {
     margin-top: 25px;
     flex-basis: 100%;
     justify-content: center;
   }
 
-  /* line 1008, sass/style.scss */
+  /* line 1014, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos {
     align-items: flex-start;
   }
 
-  /* line 1011, sass/style.scss */
+  /* line 1017, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos * {
     text-align: center;
   }
 
-  /* line 1014, sass/style.scss */
+  /* line 1020, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.copy {
     flex-basis: 100%;
     text-align: center;
     font-size: 2.2vw;
   }
 
-  /* line 1019, sass/style.scss */
+  /* line 1025, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder .fusion-social-networks .fusion-social-network-icon {
     font-size: 20px;
     padding: 12px;
     border-radius: 30px;
   }
 
-  /* line 1024, sass/style.scss */
+  /* line 1030, sass/style.scss */
   footer.mainfooter .fwrapper .footer-menu ul li a {
     font-size: 2.3vw;
   }
 
-  /* line 1027, sass/style.scss */
+  /* line 1033, sass/style.scss */
   body.home h1 {
     font-size: 8vw !important;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 1033, sass/style.scss */
+  /* line 1039, sass/style.scss */
   .show-on-mobile {
     display: block;
   }
 
-  /* line 1036, sass/style.scss */
+  /* line 1042, sass/style.scss */
   .hide-on-mobile {
     display: none;
   }
 
-  /* line 1039, sass/style.scss */
+  /* line 1045, sass/style.scss */
   .content-logo-holder .airtext {
     top: 15%;
   }
 
-  /* line 1042, sass/style.scss */
+  /* line 1048, sass/style.scss */
   .szolgaltatas-page-holder .title {
     text-align: center;
   }
 
-  /* line 1045, sass/style.scss */
+  /* line 1051, sass/style.scss */
   .datepickerbutton-holder a.datepicker-btn {
     font-size: 5vw;
     width: 80%;
   }
 
-  /* line 1049, sass/style.scss */
+  /* line 1055, sass/style.scss */
   .fusion-mobile-menu-icons {
     right: 25px;
   }
 
-  /* line 1053, sass/style.scss */
+  /* line 1059, sass/style.scss */
   .headdivider-holder .text:before,
   .headdivider-holder .text:after {
     width: 30px;
   }
 
-  /* line 1056, sass/style.scss */
+  /* line 1062, sass/style.scss */
   .headdivider-holder .text {
     padding: 0 35px;
   }
 
-  /* line 1059, sass/style.scss */
+  /* line 1065, sass/style.scss */
   body.home #main {
     padding: 0 10px !important;
     margin-top: -110px !important;
   }
 
-  /* line 1063, sass/style.scss */
+  /* line 1069, sass/style.scss */
   .welcome-text {
     padding: 0 5px;
   }
 
-  /* line 1066, sass/style.scss */
+  /* line 1072, sass/style.scss */
   .fusion-secondary-header .contacts {
     margin-bottom: 10px;
   }
 
-  /* line 1069, sass/style.scss */
+  /* line 1075, sass/style.scss */
   .fusion-secondary-header .contacts span {
     display: block;
     text-align: center;
     width: 100%;
     margin: 0;
   }
-  /* line 1074, sass/style.scss */
+  /* line 1080, sass/style.scss */
   .fusion-secondary-header .contacts span.email {
     display: none;
   }
-  /* line 1077, sass/style.scss */
+  /* line 1083, sass/style.scss */
   .fusion-secondary-header .contacts span.phone {
     font-size: 16px;
   }
-  /* line 1080, sass/style.scss */
+  /* line 1086, sass/style.scss */
   .fusion-secondary-header .contacts span.address {
     display: none;
   }
 
-  /* line 1084, sass/style.scss */
+  /* line 1090, sass/style.scss */
   .fusion-secondary-header .fusion-alignright .opens {
     font-size: 4vw;
   }
-  /* line 1086, sass/style.scss */
+  /* line 1092, sass/style.scss */
   .fusion-secondary-header .fusion-alignright .opens i {
     display: none;
   }
 
-  /* line 1090, sass/style.scss */
+  /* line 1096, sass/style.scss */
   .fusion-mobile-menu-design-modern .fusion-secondary-header {
     padding: 10px !important;
   }
 
-  /* line 1093, sass/style.scss */
+  /* line 1099, sass/style.scss */
   .fusion-mobile-menu-design-modern .fusion-social-links-header {
     margin: 0 0 10px 0;
   }
 
-  /* line 1096, sass/style.scss */
+  /* line 1102, sass/style.scss */
   .szolglist-holder .content-holder > article .title h3 {
     font-size: 4.2vw;
     line-height: 1;
     margin-top: 15px !important;
   }
 
-  /* line 1101, sass/style.scss */
+  /* line 1107, sass/style.scss */
   .szolglist-holder .content-holder > article .price {
     font-size: 3.2vw;
     width: 80%;
   }
 
-  /* line 1105, sass/style.scss */
+  /* line 1111, sass/style.scss */
   footer.mainfooter .fwrapper {
     padding: 0 !important;
   }
 
-  /* line 1108, sass/style.scss */
+  /* line 1114, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email, footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone {
     font-size: 3.2vw;
   }
 
-  /* line 1111, sass/style.scss */
+  /* line 1117, sass/style.scss */
   .news-holder-content {
     background-size: 70%;
   }
 
-  /* line 1114, sass/style.scss */
+  /* line 1120, sass/style.scss */
   .bloglist-holder .content-holder > article {
     flex-basis: 100%;
   }
 
-  /* line 1117, sass/style.scss */
+  /* line 1123, sass/style.scss */
   .bloglist-holder:before, .bloglist-holder:after {
     height: 400px;
   }
 
-  /* line 1120, sass/style.scss */
+  /* line 1126, sass/style.scss */
   .bloglist-holder .content-holder > article .title {
     margin: 10px 0 !important;
   }
-  /* line 1122, sass/style.scss */
+  /* line 1128, sass/style.scss */
   .bloglist-holder .content-holder > article .title h4 {
     font-size: 5.5vw !important;
   }
 
-  /* line 1126, sass/style.scss */
+  /* line 1132, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.email, footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.phone {
     flex-basis: 100%;
     font-size: 5vw;
     margin: 10px 0;
   }
 
-  /* line 1131, sass/style.scss */
+  /* line 1137, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.contact-infos .infos > div.copy {
     font-size: 4vw;
     margin-top: 40px;
   }
 
-  /* line 1135, sass/style.scss */
+  /* line 1141, sass/style.scss */
   footer.mainfooter .fwrapper .footer-content-holder > div.creator {
     font-size: 3vw;
   }
 
-  /* line 1138, sass/style.scss */
+  /* line 1144, sass/style.scss */
   .contact-form-holder {
     width: 100%;
     padding: 10px;
   }
 
-  /* line 1142, sass/style.scss */
+  /* line 1148, sass/style.scss */
   .contact-form-holder .flxtbl > div {
     flex-basis: 100% !important;
   }
 
-  /* line 1145, sass/style.scss */
+  /* line 1151, sass/style.scss */
   .contact-form-holder .flxtbl > div.idopont label {
     font-size: 4vw;
     line-height: 1;
     margin: 10px 0;
   }
 
-  /* line 1150, sass/style.scss */
+  /* line 1156, sass/style.scss */
   .contact-form-holder .flxtbl > div.recaptcha iframe {
     width: 100% !important;
   }
 
-  /* line 1154, sass/style.scss */
+  /* line 1160, sass/style.scss */
   .szolgaltatas-page-holder > div.left-cont,
   .szolgaltatas-page-holder > div.right-cont {
     flex-basis: 100%;
   }
 
-  /* line 1157, sass/style.scss */
+  /* line 1163, sass/style.scss */
   .szolgaltatas-page-holder > div.right-cont {
     padding: 40px 0 0 0 !important;
   }
 
-  /* line 1160, sass/style.scss */
+  /* line 1166, sass/style.scss */
   .news-holder-content {
     padding: 15px;
   }
-  /* line 1163, sass/style.scss */
+  /* line 1169, sass/style.scss */
   .news-holder-content p {
     padding: 0 10px;
   }

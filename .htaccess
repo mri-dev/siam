@@ -2,15 +2,12 @@ AddDefaultCharset UTF-8
 Options -Indexes
 RewriteEngine on
 
-# Karbantartás redirect
-#RewriteCond %{REMOTE_ADDR} !46\.107\.112\.249$
-RewriteCond %{REQUEST_URI} !/ur/
-RewriteRule .*  /ur/ [L]
-
-# Almappa redirect
-#RewriteCond %{REMOTE_ADDR} 46\.107\.112\.249$
-#RewriteCond %{REQUEST_URI} !/web/
-#RewriteRule .*  /web/ [L]
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^siamthaimasszazs.hu$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.siamthaimasszazs.hu$
+RewriteCond %{REQUEST_URI} !web/
+RewriteRule (.*) /web/$1 [L]  
 
 RewriteCond %{HTTPS} off
 # First rewrite to HTTPS:

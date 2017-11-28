@@ -1,6 +1,6 @@
 <?php
 define('PROTOCOL', 'https');
-define('TARGETDOMAIN', 'dev.siamthaimasszazs.hu');
+define('TARGETDOMAIN', 'siamthaimasszazs.hu');
 define('DOMAIN', $_SERVER['HTTP_HOST']);
 define('IFROOT', str_replace(get_option('siteurl'), '//'.DOMAIN, get_stylesheet_directory_uri()));
 define('DEVMODE', true);
